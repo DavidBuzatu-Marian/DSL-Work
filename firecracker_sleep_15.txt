@@ -1,0 +1,739 @@
+time="2022-11-23T04:38:39.566877725-05:00" level=info msg="starting containerd" revision=24f1fcf99ebf6edcb94edd71a2affbcdae6b08e7 version=1.6.9+unknown
+time="2022-11-23T04:38:39.591947107-05:00" level=info msg="loading plugin \"io.containerd.content.v1.content\"..." type=io.containerd.content.v1
+time="2022-11-23T04:38:39.592044033-05:00" level=info msg="loading plugin \"io.containerd.snapshotter.v1.devmapper\"..." type=io.containerd.snapshotter.v1
+time="2022-11-23T04:38:39.592138455-05:00" level=info msg="initializing pool device \"fc-dev-thinpool\""
+time="2022-11-23T04:38:39.595129292-05:00" level=info msg="using dmsetup:\nLibrary version:   1.02.167 (2019-11-30)\nDriver version:    4.41.0"
+time="2022-11-23T04:38:39.598848297-05:00" level=warning msg="failed to load plugin io.containerd.snapshotter.v1.devmapper" error="failed to query pool \"/dev/mapper/fc-dev-thinpool\": no such device or address"
+time="2022-11-23T04:38:39.598904335-05:00" level=info msg="loading plugin \"io.containerd.snapshotter.v1.overlayfs\"..." type=io.containerd.snapshotter.v1
+time="2022-11-23T04:38:39.599154915-05:00" level=info msg="loading plugin \"io.containerd.snapshotter.v1.proxy\"..." type=io.containerd.snapshotter.v1
+time="2022-11-23T04:38:39.599321918-05:00" level=info msg="loading plugin \"io.containerd.metadata.v1.bolt\"..." type=io.containerd.metadata.v1
+time="2022-11-23T04:38:39.599363225-05:00" level=warning msg="could not use snapshotter devmapper in metadata plugin" error="failed to query pool \"/dev/mapper/fc-dev-thinpool\": no such device or address"
+time="2022-11-23T04:38:39.599389572-05:00" level=info msg="metadata content store policy set" policy=shared
+time="2022-11-23T04:38:39.599533276-05:00" level=info msg="loading plugin \"io.containerd.differ.v1.walking\"..." type=io.containerd.differ.v1
+time="2022-11-23T04:38:39.599582953-05:00" level=info msg="loading plugin \"io.containerd.event.v1.exchange\"..." type=io.containerd.event.v1
+time="2022-11-23T04:38:39.599621208-05:00" level=info msg="loading plugin \"io.containerd.gc.v1.scheduler\"..." type=io.containerd.gc.v1
+time="2022-11-23T04:38:39.599694989-05:00" level=info msg="loading plugin \"io.containerd.service.v1.introspection-service\"..." type=io.containerd.service.v1
+time="2022-11-23T04:38:39.599732003-05:00" level=info msg="loading plugin \"io.containerd.service.v1.containers-service\"..." type=io.containerd.service.v1
+time="2022-11-23T04:38:39.599774680-05:00" level=info msg="loading plugin \"io.containerd.service.v1.content-service\"..." type=io.containerd.service.v1
+time="2022-11-23T04:38:39.599825376-05:00" level=info msg="loading plugin \"io.containerd.service.v1.diff-service\"..." type=io.containerd.service.v1
+time="2022-11-23T04:38:39.599860215-05:00" level=info msg="loading plugin \"io.containerd.service.v1.images-service\"..." type=io.containerd.service.v1
+time="2022-11-23T04:38:39.599891339-05:00" level=info msg="loading plugin \"io.containerd.service.v1.leases-service\"..." type=io.containerd.service.v1
+time="2022-11-23T04:38:39.599921273-05:00" level=info msg="loading plugin \"io.containerd.service.v1.namespaces-service\"..." type=io.containerd.service.v1
+time="2022-11-23T04:38:39.599952463-05:00" level=info msg="loading plugin \"io.containerd.service.v1.snapshots-service\"..." type=io.containerd.service.v1
+time="2022-11-23T04:38:39.599983645-05:00" level=info msg="loading plugin \"io.containerd.runtime.v1.linux\"..." type=io.containerd.runtime.v1
+time="2022-11-23T04:38:39.600060631-05:00" level=info msg="loading plugin \"io.containerd.runtime.v2.task\"..." type=io.containerd.runtime.v2
+time="2022-11-23T04:38:39.600128050-05:00" level=debug msg="loading tasks in namespace" namespace=vm1
+time="2022-11-23T04:38:39.600217957-05:00" level=info msg="loading plugin \"io.containerd.monitor.v1.cgroups\"..." type=io.containerd.monitor.v1
+time="2022-11-23T04:38:39.600885419-05:00" level=info msg="loading plugin \"io.containerd.service.v1.tasks-service\"..." type=io.containerd.service.v1
+time="2022-11-23T04:38:39.600958415-05:00" level=debug msg="No RDT config file specified, RDT not configured"
+time="2022-11-23T04:38:39.601022478-05:00" level=info msg="loading plugin \"io.containerd.service.v1.fc-control\"..." type=io.containerd.service.v1
+time="2022-11-23T04:38:39.601054331-05:00" level=debug msg="initializing fc-control plugin (root: \"/var/lib/firecracker-containerd/containerd/io.containerd.service.v1.fc-control\")"
+time="2022-11-23T04:38:39.621139230-05:00" level=info msg="loading plugin \"io.containerd.grpc.v1.introspection\"..." type=io.containerd.grpc.v1
+time="2022-11-23T04:38:39.621202977-05:00" level=info msg="loading plugin \"io.containerd.internal.v1.restart\"..." type=io.containerd.internal.v1
+time="2022-11-23T04:38:39.621311817-05:00" level=info msg="loading plugin \"io.containerd.grpc.v1.containers\"..." type=io.containerd.grpc.v1
+time="2022-11-23T04:38:39.621346981-05:00" level=info msg="loading plugin \"io.containerd.grpc.v1.content\"..." type=io.containerd.grpc.v1
+time="2022-11-23T04:38:39.621380164-05:00" level=info msg="loading plugin \"io.containerd.grpc.v1.diff\"..." type=io.containerd.grpc.v1
+time="2022-11-23T04:38:39.621408336-05:00" level=info msg="loading plugin \"io.containerd.grpc.v1.events\"..." type=io.containerd.grpc.v1
+time="2022-11-23T04:38:39.621437168-05:00" level=info msg="loading plugin \"io.containerd.grpc.v1.healthcheck\"..." type=io.containerd.grpc.v1
+time="2022-11-23T04:38:39.621466608-05:00" level=info msg="loading plugin \"io.containerd.grpc.v1.images\"..." type=io.containerd.grpc.v1
+time="2022-11-23T04:38:39.621495992-05:00" level=info msg="loading plugin \"io.containerd.grpc.v1.leases\"..." type=io.containerd.grpc.v1
+time="2022-11-23T04:38:39.621525809-05:00" level=info msg="loading plugin \"io.containerd.grpc.v1.namespaces\"..." type=io.containerd.grpc.v1
+time="2022-11-23T04:38:39.621557557-05:00" level=info msg="loading plugin \"io.containerd.internal.v1.opt\"..." type=io.containerd.internal.v1
+time="2022-11-23T04:38:39.621631181-05:00" level=info msg="loading plugin \"io.containerd.grpc.v1.snapshots\"..." type=io.containerd.grpc.v1
+time="2022-11-23T04:38:39.621663423-05:00" level=info msg="loading plugin \"io.containerd.grpc.v1.tasks\"..." type=io.containerd.grpc.v1
+time="2022-11-23T04:38:39.621693411-05:00" level=info msg="loading plugin \"io.containerd.grpc.v1.version\"..." type=io.containerd.grpc.v1
+time="2022-11-23T04:38:39.621735986-05:00" level=info msg="loading plugin \"io.containerd.grpc.v1.fc-control-service\"..." type=io.containerd.grpc.v1
+time="2022-11-23T04:38:39.621760183-05:00" level=debug msg="initializing fc-control-service plugin"
+time="2022-11-23T04:38:39.622045772-05:00" level=info msg=serving... address=/run/firecracker-containerd/containerd.sock.ttrpc
+time="2022-11-23T04:38:39.622134951-05:00" level=info msg=serving... address=/run/firecracker-containerd/containerd.sock
+time="2022-11-23T04:38:39.622168522-05:00" level=debug msg="sd notification" error="<nil>" notified=false state="READY=1"
+time="2022-11-23T04:38:39.622195626-05:00" level=info msg="containerd successfully booted in 0.056196s"
+time="2022-11-23T04:38:39.701327690-05:00" level=debug msg="garbage collected" d="787.818µs"
+time="2022-11-23T04:39:29.777507125-05:00" level=debug msg="create VM request: VMID:\"vm1\" NetworkInterfaces:<AllowMMDS:true CNIConfig:<NetworkName:\"fcnet\" InterfaceName:\"veth0\" > > "
+time="2022-11-23T04:39:29.777585985-05:00" level=debug msg="using namespace: vm1"
+time="2022-11-23T04:39:29.777973410-05:00" level=debug msg="starting containerd-shim-aws-firecracker" vmID=vm1
+time="2022-11-23T04:39:29.825430234-05:00" level=info msg="loading plugin \"io.containerd.service.v1.introspection-service\"..." runtime=aws.firecracker type=io.containerd.service.v1
+time="2022-11-23T04:39:29.825574389-05:00" level=info msg="loading plugin \"io.containerd.grpc.v1.introspection\"..." runtime=aws.firecracker type=io.containerd.grpc.v1
+time="2022-11-23T04:39:29.825623489-05:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=aws.firecracker type=io.containerd.event.v1
+time="2022-11-23T04:39:29.825652648-05:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=aws.firecracker type=io.containerd.ttrpc.v1
+time="2022-11-23T04:39:29.825715571-05:00" level=debug msg="registering ttrpc service" id=io.containerd.ttrpc.v1.task
+time="2022-11-23T04:39:29.825739833-05:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=aws.firecracker type=io.containerd.internal.v1
+time="2022-11-23T04:39:29.825935073-05:00" level=debug msg="serving api on socket" socket="[inherited from parent]"
+time="2022-11-23T04:39:29.825988043-05:00" level=info msg="starting signal loop" namespace=vm1 path="/var/lib/firecracker-containerd/shim-base/vm1#vm1" pid=54136 runtime=aws.firecracker
+time="2022-11-23T04:39:29.826135859-05:00" level=info msg="creating new VM" runtime=aws.firecracker vmID=vm1
+time="2022-11-23T04:39:29.826273331-05:00" level=debug msg="noop operation returning shim dir for JailPath" jailer=noop runtime=aws.firecracker vmID=vm1
+time="2022-11-23T04:39:29.826364287-05:00" level=debug msg="using socket path: firecracker.sock" runtime=aws.firecracker vmID=vm1
+time="2022-11-23T04:39:29.826388191-05:00" level=debug msg="noop operation returning shim dir for JailPath" jailer=noop runtime=aws.firecracker vmID=vm1
+time="2022-11-23T04:39:29.826479951-05:00" level=debug msg="noop operation for StubDrivesOptions" jailer=noop runtime=aws.firecracker vmID=vm1
+time="2022-11-23T04:39:29.826513958-05:00" level=debug msg="noop operation returning shim dir for JailPath" jailer=noop runtime=aws.firecracker vmID=vm1
+time="2022-11-23T04:39:29.826590151-05:00" level=debug msg="noop operation for BuildJailedMachine" jailer=noop runtime=aws.firecracker vmID=vm1
+time="2022-11-23T04:39:29.826609069-05:00" level=debug msg="No balloon device is setup" runtime=aws.firecracker vmID=vm1
+time="2022-11-23T04:39:29.826717138-05:00" level=debug msg="Called NewMachine()" runtime=aws.firecracker
+time="2022-11-23T04:39:29.826733969-05:00" level=debug msg="Called Machine.Start()" runtime=aws.firecracker
+time="2022-11-23T04:39:29.826748067-05:00" level=debug msg="Marking Machine as Started" runtime=aws.firecracker
+time="2022-11-23T04:39:29.826765554-05:00" level=debug msg="Running handler validate.NetworkCfg" runtime=aws.firecracker
+time="2022-11-23T04:39:29.826799991-05:00" level=debug msg="Running handler validate.Cfg" runtime=aws.firecracker
+time="2022-11-23T04:39:29.826834914-05:00" level=debug msg="Running handler fcinit.SetupNetwork" runtime=aws.firecracker
+time="2022-11-23T04:39:30.022967999-05:00" level=debug msg="Running handler fcinit.SetupKernelArgs" runtime=aws.firecracker
+time="2022-11-23T04:39:30.023068718-05:00" level=debug msg="Running handler fcinit.StartVMM" runtime=aws.firecracker
+time="2022-11-23T04:39:30.023091498-05:00" level=info msg="Called startVMM(), setting up a VMM on firecracker.sock" runtime=aws.firecracker
+time="2022-11-23T04:39:30.023144567-05:00" level=debug msg="Starting [/usr/local/bin/firecracker --api-sock firecracker.sock --id vm1]" runtime=aws.firecracker
+time="2022-11-23T04:39:30.024045452-05:00" level=debug msg="VMM started socket path is firecracker.sock" runtime=aws.firecracker
+time="2022-11-23T04:39:30.024088206-05:00" level=debug msg="Setting up signal handler: [interrupt quit terminated hangup aborted]" runtime=aws.firecracker
+time="2022-11-23T04:39:30.035723129-05:00" level=debug msg="returning from startVMM()" runtime=aws.firecracker
+time="2022-11-23T04:39:30.035763442-05:00" level=debug msg="Running handler fcinit.CreateLogFilesHandler" runtime=aws.firecracker
+time="2022-11-23T04:39:30.035840496-05:00" level=debug msg="Created metrics and logging fifos." runtime=aws.firecracker
+time="2022-11-23T04:39:30.035858590-05:00" level=debug msg="Running handler fcinit.BootstrapLogging" runtime=aws.firecracker
+time="2022-11-23T04:39:30.036304837-05:00" level=debug msg="Configured VMM logging to /var/lib/firecracker-containerd/shim-base/vm1#vm1/fc-logs.fifo" runtime=aws.firecracker
+time="2022-11-23T04:39:30.036655783-05:00" level=debug msg="Configured VMM metrics to /var/lib/firecracker-containerd/shim-base/vm1#vm1/fc-metrics.fifo" runtime=aws.firecracker
+time="2022-11-23T04:39:30.036705777-05:00" level=debug msg="setup logging: success" runtime=aws.firecracker
+time="2022-11-23T04:39:30.036721988-05:00" level=debug msg="Running handler fcinit.CreateMachine" runtime=aws.firecracker
+time="2022-11-23T04:39:30.036987183-05:00" level=debug msg="PutMachineConfiguration returned" runtime=aws.firecracker
+time="2022-11-23T04:39:30.037267917-05:00" level=info msg="refreshMachineConfiguration: [GET /machine-config][200] getMachineConfigurationOK  &{CPUTemplate:T2 MemSizeMib:0xc0004439c0 Smt:0xc0004439cb TrackDirtyPages:false VcpuCount:0xc0004439b8}" runtime=aws.firecracker
+time="2022-11-23T04:39:30.037296668-05:00" level=debug msg="createMachine returning" runtime=aws.firecracker
+time="2022-11-23T04:39:30.037311653-05:00" level=debug msg="Running handler fcinit.CreateBootSource" runtime=aws.firecracker
+time="2022-11-23T04:39:30.037649335-05:00" level=info msg="PutGuestBootSource: [PUT /boot-source][204] putGuestBootSourceNoContent " runtime=aws.firecracker
+time="2022-11-23T04:39:30.037673233-05:00" level=debug msg="Running handler fcinit.AttachDrives" runtime=aws.firecracker
+time="2022-11-23T04:39:30.037690260-05:00" level=info msg="Attaching drive /var/lib/firecracker-containerd/runtime/rootfs-stargz.img, slot root_drive, root true." runtime=aws.firecracker
+time="2022-11-23T04:39:30.038243634-05:00" level=info msg="Attached drive /var/lib/firecracker-containerd/runtime/rootfs-stargz.img: [PUT /drives/{drive_id}][204] putGuestDriveByIdNoContent " runtime=aws.firecracker
+time="2022-11-23T04:39:30.038273041-05:00" level=debug msg="attachDrive returned for /var/lib/firecracker-containerd/runtime/rootfs-stargz.img" runtime=aws.firecracker
+time="2022-11-23T04:39:30.038291554-05:00" level=info msg="Attaching drive /var/lib/firecracker-containerd/shim-base/vm1#vm1/ctrstub0, slot MN2HE43UOVRDA, root false." runtime=aws.firecracker
+time="2022-11-23T04:39:30.038605486-05:00" level=info msg="Attached drive /var/lib/firecracker-containerd/shim-base/vm1#vm1/ctrstub0: [PUT /drives/{drive_id}][204] putGuestDriveByIdNoContent " runtime=aws.firecracker
+time="2022-11-23T04:39:30.038630558-05:00" level=debug msg="attachDrive returned for /var/lib/firecracker-containerd/shim-base/vm1#vm1/ctrstub0" runtime=aws.firecracker
+time="2022-11-23T04:39:30.038647953-05:00" level=debug msg="Running handler fcinit.CreateNetworkInterfaces" runtime=aws.firecracker
+time="2022-11-23T04:39:30.038665228-05:00" level=info msg="Attaching NIC tap0 (hwaddr 22:ee:b7:e5:c2:9b) at index 1" runtime=aws.firecracker
+time="2022-11-23T04:39:30.040471499-05:00" level=debug msg="PutGuestNetworkInterfaceByID: [PUT /network-interfaces/{iface_id}][204] putGuestNetworkInterfaceByIdNoContent " runtime=aws.firecracker
+time="2022-11-23T04:39:30.040516976-05:00" level=debug msg="createNetworkInterface returned for tap0" runtime=aws.firecracker
+time="2022-11-23T04:39:30.040536801-05:00" level=debug msg="Running handler fcinit.AddVsocks" runtime=aws.firecracker
+time="2022-11-23T04:39:30.041076341-05:00" level=debug msg="Attach vsock firecracker.vsock successful: [PUT /vsock][204] putGuestVsockNoContent " runtime=aws.firecracker
+time="2022-11-23T04:39:30.041117227-05:00" level=debug msg="Running handler fcinit.ConfigMmds" runtime=aws.firecracker
+time="2022-11-23T04:39:30.041604203-05:00" level=debug msg="SetMmdsConfig successful" runtime=aws.firecracker
+time="2022-11-23T04:39:30.041630532-05:00" level=debug msg="Running handler firecracker-containerd-jail-pid-handler" runtime=aws.firecracker
+time="2022-11-23T04:39:30.052063801-05:00" level=info msg="startInstance successful: [PUT /actions][204] createSyncActionNoContent " runtime=aws.firecracker
+time="2022-11-23T04:39:30.052105515-05:00" level=info msg="calling agent" runtime=aws.firecracker vmID=vm1
+time="2022-11-23T04:39:30.099500580-05:00" level=debug msg="[    0.000000] Linux version 4.14.0 (root@3a07c50faf4d) (gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04)) #1 SMP Fri Nov 11 10:04:47 UTC 2022" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.103059668-05:00" level=debug msg="[    0.000000] Command line: pnp.debug=1 nomodules systemd.unit=firecracker.target init=sbin/overlay-init console=ttyS0 reboot=k panic=1 pci=off ro systemd.unified_cgroup_hierarchy=0 systemd.journald.forward_to_console ip=192.168.1.13::192.168.1.1:255.255.255.0:::off:198.22.255.3:: noapic root=/dev/vda ro virtio_mmio.device=4K@0xd0000000:5 virtio_mmio.device=4K@0xd0001000:6 virtio_mmio.device=4K@0xd0002000:7 virtio_mmio.device=4K@0xd0003000:8" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.103784166-05:00" level=debug msg="[    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.104413062-05:00" level=debug msg="[    0.000000] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.104990807-05:00" level=debug msg="[    0.000000] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.105583237-05:00" level=debug msg="[    0.000000] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.106452460-05:00" level=debug msg="[    0.000000] x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'standard' format." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.106881113-05:00" level=debug msg="[    0.000000] e820: BIOS-provided physical RAM map:" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.107513911-05:00" level=debug msg="[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.108143574-05:00" level=debug msg="[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x0000000007ffffff] usable" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.108624071-05:00" level=debug msg="[    0.000000] NX (Execute Disable) protection: active" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.108976592-05:00" level=debug msg="[    0.000000] DMI not present or invalid." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.109318517-05:00" level=debug msg="[    0.000000] Hypervisor detected: KVM" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.109762906-05:00" level=debug msg="[    0.000000] tsc: Unable to calibrate against PIT" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.110315189-05:00" level=debug msg="[    0.000000] tsc: No reference (HPET/PMTIMER) available" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.110909258-05:00" level=debug msg="[    0.000000] e820: last_pfn = 0x8000 max_arch_pfn = 0x400000000" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.111182978-05:00" level=debug msg="[    0.000000] MTRR: Disabled" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.111794137-05:00" level=debug msg="[    0.000000] x86/PAT: MTRRs disabled, skipping PAT initialization too." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.112299681-05:00" level=debug msg="[    0.000000] CPU MTRRs all blank - virtualized system." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.112947235-05:00" level=debug msg="[    0.000000] x86/PAT: Configuration [0-7]: WB  WT  UC- UC  WB  WT  UC- UC  " jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.113723779-05:00" level=debug msg="[    0.000000] found SMP MP-table at [mem 0x0009fc00-0x0009fc0f] mapped at [ffffffffff200c00]" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.114224028-05:00" level=debug msg="[    0.000000] Scanning 1 areas for low memory corruption" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.114576709-05:00" level=debug msg="[    0.000000] No NUMA configuration found" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.115212614-05:00" level=debug msg="[    0.000000] Faking a node at [mem 0x0000000000000000-0x0000000007ffffff]" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.115777224-05:00" level=debug msg="[    0.000000] NODE_DATA(0) allocated [mem 0x07fde000-0x07ffffff]" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.116257142-05:00" level=debug msg="[    0.000000] kvm-clock: Using msrs 4b564d01 and 4b564d00" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.116816967-05:00" level=debug msg="[    0.000000] kvm-clock: cpu 0, msr 0:7fdc001, primary cpu clock" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.117341789-05:00" level=debug msg="[    0.000000] kvm-clock: using sched offset of 39784992 cycles" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.118312117-05:00" level=debug msg="[    0.000000] clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.118547661-05:00" level=debug msg="[    0.000000] Zone ranges:" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.119145548-05:00" level=debug msg="[    0.000000]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.119737255-05:00" level=debug msg="[    0.000000]   DMA32    [mem 0x0000000001000000-0x0000000007ffffff]" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.120014245-05:00" level=debug msg="[    0.000000]   Normal   empty" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.120441947-05:00" level=debug msg="[    0.000000] Movable zone start for each node" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.120765751-05:00" level=debug msg="[    0.000000] Early memory node ranges" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.121355299-05:00" level=debug msg="[    0.000000]   node   0: [mem 0x0000000000001000-0x000000000009efff]" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.121935730-05:00" level=debug msg="[    0.000000]   node   0: [mem 0x0000000000100000-0x0000000007ffffff]" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.122616024-05:00" level=debug msg="[    0.000000] Initmem setup node 0 [mem 0x0000000000001000-0x0000000007ffffff]" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.123072811-05:00" level=debug msg="[    0.000000] Intel MultiProcessor Specification v1.4" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.123453741-05:00" level=debug msg="[    0.000000] MPTABLE: OEM ID: FC      " jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.123876843-05:00" level=debug msg="[    0.000000] MPTABLE: Product ID: 000000000000" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.124256808-05:00" level=debug msg="[    0.000000] MPTABLE: APIC at: 0xFEE00000" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.124607431-05:00" level=debug msg="[    0.000000] Processor #0 (Bootup-CPU)" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.125241397-05:00" level=debug msg="[    0.000000] IOAPIC[0]: apic_id 2, version 17, address 0xfec00000, GSI 0-23" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.125492858-05:00" level=debug msg="[    0.000000] Processors: 1" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.125966842-05:00" level=debug msg="[    0.000000] smpboot: Allowing 1 CPUs, 0 hotplug CPUs" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.126563356-05:00" level=debug msg="[    0.000000] PM: Registered nosave memory: [mem 0x00000000-0x00000fff]" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.127154227-05:00" level=debug msg="[    0.000000] PM: Registered nosave memory: [mem 0x0009f000-0x000fffff]" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.127785607-05:00" level=debug msg="[    0.000000] e820: [mem 0x08000000-0xffffffff] available for PCI devices" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.128233847-05:00" level=debug msg="[    0.000000] Booting paravirtualized kernel on KVM" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.129201817-05:00" level=debug msg="[    0.000000] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.129531531-05:00" level=debug msg="[    0.000000] random: fast init done" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.130277269-05:00" level=debug msg="[    0.000000] setup_percpu: NR_CPUS:128 nr_cpumask_bits:128 nr_cpu_ids:1 nr_node_ids:1" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.131034714-05:00" level=debug msg="[    0.000000] percpu: Embedded 35 pages/cpu @ffff880007c00000 s105944 r8192 d29224 u2097152" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.131421517-05:00" level=debug msg="[    0.000000] KVM setup async PF for cpu 0" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.131832307-05:00" level=debug msg="[    0.000000] kvm-stealtime: cpu 0, msr 7c0c740" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.132463077-05:00" level=debug msg="[    0.000000] PV qspinlock hash table entries: 256 (order: 0, 4096 bytes)" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.133097123-05:00" level=debug msg="[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 32137" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.133415659-05:00" level=debug msg="[    0.000000] Policy zone: DMA32" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.137090164-05:00" level=debug msg="[    0.000000] Kernel command line: pnp.debug=1 nomodules systemd.unit=firecracker.target init=sbin/overlay-init console=ttyS0 reboot=k panic=1 pci=off ro systemd.unified_cgroup_hierarchy=0 systemd.journald.forward_to_console ip=192.168.1.13::192.168.1.1:255.255.255.0:::off:198.22.255.3:: noapic root=/dev/vda ro virtio_mmio.device=4K@0xd0000000:5 virtio_mmio.device=4K@0xd0001000:6 virtio_mmio.device=4K@0xd0002000:7 virtio_mmio.device=4K@0xd0003000:8" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.137635159-05:00" level=debug msg="[    0.000000] PID hash table entries: 512 (order: 0, 4096 bytes)" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.138856767-05:00" level=debug msg="[    0.000000] Memory: 115176K/130680K available (5731K kernel code, 634K rwdata, 1548K rodata, 1276K init, 2836K bss, 15504K reserved, 0K cma-reserved)" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.139449320-05:00" level=debug msg="[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.139841697-05:00" level=debug msg="[    0.004000] Hierarchical RCU implementation." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.140416071-05:00" level=debug msg="[    0.004000] \tRCU restricting CPUs from NR_CPUS=128 to nr_cpu_ids=1." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.141024722-05:00" level=debug msg="[    0.004000] RCU: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.141558245-05:00" level=debug msg="[    0.004000] NR_IRQS: 4352, nr_irqs: 48, preallocated irqs: 16" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.141974616-05:00" level=debug msg="[    0.004000] Console: colour dummy device 80x25" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.142302620-05:00" level=debug msg="[    0.004000] console [ttyS0] enabled" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.142750628-05:00" level=debug msg="[    0.004000] tsc: Detected 2095.078 MHz processor" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.143556631-05:00" level=debug msg="[    0.004000] Calibrating delay loop (skipped) preset value.. 4190.15 BogoMIPS (lpj=8380312)" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.144015932-05:00" level=debug msg="[    0.004000] pid_max: default: 32768 minimum: 301" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.144456889-05:00" level=debug msg="[    0.004000] Security Framework initialized" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.144814969-05:00" level=debug msg="[    0.004000] SELinux:  Initializing." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.145601296-05:00" level=debug msg="[    0.004000] Dentry cache hash table entries: 16384 (order: 5, 131072 bytes)" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.146297265-05:00" level=debug msg="[    0.004000] Inode-cache hash table entries: 8192 (order: 4, 65536 bytes)" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.146935691-05:00" level=debug msg="[    0.004000] Mount-cache hash table entries: 512 (order: 0, 4096 bytes)" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.147696893-05:00" level=debug msg="[    0.004013] Mountpoint-cache hash table entries: 512 (order: 0, 4096 bytes)" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.148404081-05:00" level=debug msg="[    0.005051] CPU: Physical Processor ID: 0" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.148973777-05:00" level=debug msg="[    0.005480] Last level iTLB entries: 4KB 64, 2MB 8, 4MB 8" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.149583439-05:00" level=debug msg="[    0.006026] Last level dTLB entries: 4KB 64, 2MB 0, 4MB 0, 1GB 4" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.158408039-05:00" level=debug msg="[    0.015525] Freeing SMP alternatives memory: 28K" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.159701044-05:00" level=debug msg="[    0.016828] smpboot: Max logical packages: 1" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.160361613-05:00" level=debug msg="[    0.017290] Not enabling interrupt remapping due to skipped IO-APIC setup" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.161367908-05:00" level=debug msg="[    0.017986] smpboot: CPU0: Intel(R) Xeon(R) Processor @ 2.10GHz (family: 0x6, model: 0x3f, stepping: 0x2)" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.162252138-05:00" level=debug msg="[    0.019010] Performance Events: unsupported p6 CPU model 63 no PMU driver, software events only." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.162742074-05:00" level=debug msg="[    0.019878] Hierarchical SRCU implementation." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.163587202-05:00" level=debug msg="[    0.020000] smp: Bringing up secondary CPUs ..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.164000488-05:00" level=debug msg="[    0.020000] smp: Brought up 1 node, 1 CPU" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.164646629-05:00" level=debug msg="[    0.020000] smpboot: Total of 1 processors activated (4190.15 BogoMIPS)" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.165075355-05:00" level=debug msg="[    0.020082] devtmpfs: initialized" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.165544014-05:00" level=debug msg="[    0.020458] x86/mm: Memory block size: 128MB" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.166636080-05:00" level=debug msg="[    0.021039] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.167332123-05:00" level=debug msg="[    0.021988] futex hash table entries: 256 (order: 2, 16384 bytes)" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.167979161-05:00" level=debug msg="[    0.022830] NET: Registered protocol family 16" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.168525990-05:00" level=debug msg="[    0.023462] cpuidle: using governor ladder" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.168907881-05:00" level=debug msg="[    0.023874] cpuidle: using governor menu" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.172860957-05:00" level=debug msg="[    0.027277] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.173417507-05:00" level=debug msg="[    0.028128] SCSI subsystem initialized" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.173903161-05:00" level=debug msg="[    0.028505] pps_core: LinuxPPS API ver. 1 registered" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.174750053-05:00" level=debug msg="[    0.028976] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.175128438-05:00" level=debug msg="[    0.029837] PTP clock support registered" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.175548122-05:00" level=debug msg="[    0.030215] dmi: Firmware registration failed." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.175955539-05:00" level=debug msg="[    0.030697] NetLabel: Initializing" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.176381632-05:00" level=debug msg="[    0.031040] NetLabel:  domain hash size = 128" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.176929148-05:00" level=debug msg="[    0.031468] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.177487091-05:00" level=debug msg="[    0.032022] NetLabel:  unlabeled traffic allowed by default" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.178190300-05:00" level=debug msg="[    0.032750] clocksource: Switched to clocksource kvm-clock" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.178571195-05:00" level=debug msg="[    0.033278] VFS: Disk quotas dquot_6.6.0" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.179246176-05:00" level=debug msg="[    0.033652] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.181055106-05:00" level=debug msg="[    0.035699] NET: Registered protocol family 2" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.181794934-05:00" level=debug msg="[    0.035699] TCP established hash table entries: 1024 (order: 1, 8192 bytes)" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.182448300-05:00" level=debug msg="[    0.036279] TCP bind hash table entries: 1024 (order: 2, 16384 bytes)" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.183032679-05:00" level=debug msg="[    0.036896] TCP: Hash tables configured (established 1024 bind 1024)" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.183668787-05:00" level=debug msg="[    0.037563] UDP hash table entries: 256 (order: 1, 8192 bytes)" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.184297753-05:00" level=debug msg="[    0.038144] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.184771742-05:00" level=debug msg="[    0.038796] NET: Registered protocol family 1" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.186059308-05:00" level=debug msg="[    0.039687] virtio-mmio: Registering device virtio-mmio.0 at 0xd0000000-0xd0000fff, IRQ 5." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.186893660-05:00" level=debug msg="[    0.040549] virtio-mmio: Registering device virtio-mmio.1 at 0xd0001000-0xd0001fff, IRQ 6." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.187713293-05:00" level=debug msg="[    0.041368] virtio-mmio: Registering device virtio-mmio.2 at 0xd0002000-0xd0002fff, IRQ 7." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.188548187-05:00" level=debug msg="[    0.042192] virtio-mmio: Registering device virtio-mmio.3 at 0xd0003000-0xd0003fff, IRQ 8." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.189335453-05:00" level=debug msg="[    0.043046] platform rtc_cmos: registered platform RTC device (no PNP device found)" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.190232298-05:00" level=debug msg="[    0.044108] Scanning for low memory corruption every 60 seconds" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.190872062-05:00" level=debug msg="[    0.044819] audit: initializing netlink subsys (disabled)" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.191476032-05:00" level=debug msg="[    0.045504] Initialise system trusted keyrings" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.191892486-05:00" level=debug msg="[    0.045955] Key type blacklist registered" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.192757461-05:00" level=debug msg="[    0.046385] audit: type=2000 audit(1669196370.142:1): state=initialized audit_enabled=0 res=1" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.193424418-05:00" level=debug msg="[    0.047261] workingset: timestamp_bits=36 max_order=15 bucket_order=0" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.194845005-05:00" level=debug msg="[    0.048722] squashfs: version 4.0 (2009/01/31) Phillip Lougher" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.195235107-05:00" level=debug msg="[    0.049310] fuse init (API version 7.26)" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.197215936-05:00" level=debug msg="[    0.051274] Key type asymmetric registered" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.197702577-05:00" level=debug msg="[    0.051687] Asymmetric key parser 'x509' registered" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.198482517-05:00" level=debug msg="[    0.052216] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 252)" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.198980090-05:00" level=debug msg="[    0.052980] io scheduler noop registered (default)" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.199387901-05:00" level=debug msg="[    0.053479] io scheduler cfq registered" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.200544556-05:00" level=debug msg="[    0.053917] virtio-mmio virtio-mmio.0: Failed to enable 64-bit or 32-bit DMA.  Trying to continue, but this might not work." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.201696348-05:00" level=debug msg="[    0.055074] virtio-mmio virtio-mmio.1: Failed to enable 64-bit or 32-bit DMA.  Trying to continue, but this might not work." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.202863974-05:00" level=debug msg="[    0.056215] virtio-mmio virtio-mmio.2: Failed to enable 64-bit or 32-bit DMA.  Trying to continue, but this might not work." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.203988933-05:00" level=debug msg="[    0.057376] virtio-mmio virtio-mmio.3: Failed to enable 64-bit or 32-bit DMA.  Trying to continue, but this might not work." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.204839303-05:00" level=debug msg="[    0.058679] Serial: 8250/16550 driver, 1 ports, IRQ sharing disabled" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.226980821-05:00" level=debug msg="[    0.080597] serial8250: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a U6_16550A" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.228419944-05:00" level=debug msg="[    0.082570] loop: module loaded" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.229822288-05:00" level=debug msg="[    0.083777] Loading iSCSI transport class v2.0-870." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.230383443-05:00" level=debug msg="[    0.084429] iscsi: registered transport (tcp)" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.230889745-05:00" level=debug msg="[    0.084854] tun: Universal TUN/TAP device driver, 1.6" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.238415807-05:00" level=debug msg="[    0.092105] i8042: Failed to disable AUX port, but continuing anyway... Is this a SiS?" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.239147461-05:00" level=debug msg="[    0.092882] i8042: If AUX port is really absent please use the 'i8042.noaux' option" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.499441812-05:00" level=debug msg="[    0.352338] serio: i8042 KBD port at 0x60,0x64 irq 1" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.501525555-05:00" level=debug msg="[    0.354251] hidraw: raw HID events driver (C) Jiri Kosina" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.503526137-05:00" level=debug msg="[    0.356085] nf_conntrack version 0.5.0 (1024 buckets, 4096 max)" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.505526354-05:00" level=debug msg="[    0.358265] ip_tables: (C) 2000-2006 Netfilter Core Team" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.507045058-05:00" level=debug msg="[    0.360124] Initializing XFRM netlink socket" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.508667069-05:00" level=debug msg="[    0.361691] NET: Registered protocol family 10" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.509426501-05:00" level=debug msg="[    0.363529] Segment Routing with IPv6" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.509886346-05:00" level=debug msg="[    0.363904] NET: Registered protocol family 17" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.510291926-05:00" level=debug msg="[    0.364366] Bridge firewalling registered" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.510992089-05:00" level=debug msg="[    0.365019] NET: Registered protocol family 40" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.511816848-05:00" level=debug msg="[    0.365601] sched_clock: Marking stable (364352460, 0)->(419983756, -55631296)" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.512019685-05:00" level=debug attempt=1 error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker vmID=vm1
+time="2022-11-23T04:39:30.512355990-05:00" level=debug msg="[    0.366440] registered taskstats version 1" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.512850112-05:00" level=debug msg="[    0.366842] Loading compiled-in X.509 certificates" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.512976002-05:00" level=debug attempt=2 error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker vmID=vm1
+time="2022-11-23T04:39:30.514407513-05:00" level=debug msg="[    0.367915] Loaded X.509 cert 'Build time autogenerated kernel key: dff6b0cfbfa0e732e18c907c0febf20166687a12'" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.514872315-05:00" level=debug msg="[    0.368936] Key type encrypted registered" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.534308273-05:00" level=debug msg="[    0.388117] IP-Config: Complete:" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.536152680-05:00" level=debug msg="[    0.388783]      device=eth0, hwaddr=22:ee:b7:e5:c2:9b, ipaddr=192.168.1.13, mask=255.255.255.0, gw=192.168.1.1" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.537188338-05:00" level=debug msg="[    0.390606]      host=192.168.1.13, domain=, nis-domain=(none)" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.538995668-05:00" level=debug msg="[    0.391659]      bootserver=255.255.255.255, rootserver=255.255.255.255, rootpath=     nameserver0=198.22.255.3" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:30.552781546-05:00" level=debug attempt=3 error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker vmID=vm1
+time="2022-11-23T04:39:30.653739034-05:00" level=debug attempt=4 error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker vmID=vm1
+time="2022-11-23T04:39:30.753769683-05:00" level=debug attempt=5 error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker vmID=vm1
+time="2022-11-23T04:39:30.853846768-05:00" level=debug attempt=6 error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker vmID=vm1
+time="2022-11-23T04:39:30.953906965-05:00" level=debug attempt=7 error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker vmID=vm1
+time="2022-11-23T04:39:31.012947463-05:00" level=debug msg="[    0.864801] input: AT Raw Set 2 keyboard as /devices/platform/i8042/serio0/input/input0" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.017511734-05:00" level=debug msg="[    0.869672] VFS: Mounted root (squashfs filesystem) readonly on device 254:0." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.019256652-05:00" level=debug msg="[    0.872765] devtmpfs: mounted" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.021894906-05:00" level=debug msg="[    0.875905] Freeing unused kernel memory: 1276K" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.022450939-05:00" level=debug msg="[    0.876362] Write protecting the kernel read-only data: 8192k" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.023168094-05:00" level=debug msg="[    0.877199] Freeing unused kernel memory: 404K" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.024738622-05:00" level=debug msg="[    0.878755] Freeing unused kernel memory: 500K" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.053619194-05:00" level=debug attempt=8 error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker vmID=vm1
+time="2022-11-23T04:39:31.140028691-05:00" level=debug msg="SELinux:  Could not open policy file <= /etc/selinux/targeted/policy/policy.32:  No such file or directory" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.145154123-05:00" level=debug msg="[    0.998814] systemd[1]: Failed to look up module alias 'autofs4': Function not implemented" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.149328303-05:00" level=debug msg="[    1.001585] systemd[1]: systemd 247.3-7+deb11u1 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +ZSTD +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=unified)" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.149855508-05:00" level=debug msg="[    1.003819] systemd[1]: Detected virtualization kvm." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.150404752-05:00" level=debug msg="[    1.004335] systemd[1]: Detected architecture x86-64." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.153431413-05:00" level=debug attempt=9 error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker vmID=vm1
+time="2022-11-23T04:39:31.154393600-05:00" level=debug jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.154728007-05:00" level=debug msg="Welcome to \x1b[1mDebian GNU/Linux 11 (bullseye)\x1b[0m!" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.154792258-05:00" level=debug jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.155379825-05:00" level=debug msg="[    1.009378] systemd[1]: Set hostname to <microvm>." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.202515991-05:00" level=debug msg="[    1.056016] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x1e3306b9ada, max_idle_ns: 440795224413 ns" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.234826285-05:00" level=debug msg="[    1.088509] systemd[1]: Queued start job for default target Firecracker containerd VM." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.237115946-05:00" level=debug msg="[    1.091014] systemd[1]: Created slice system-modprobe.slice." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.237693667-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Created slice \x1b[0;1;39msystem-modprobe.slice\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.238566663-05:00" level=debug msg="[    1.092226] systemd[1]: Started Dispatch Password Requests to Console Directory Watch." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.239222943-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Started \x1b[0;1;39mDispatch Password …ts to Console Directory Watch\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.240249344-05:00" level=debug msg="[    1.093723] systemd[1]: Starting of Arbitrary Executable File Formats File System Automount Point not supported." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.240994264-05:00" level=debug msg="[\x1b[0;1;38;5;185mUNSUPP\x1b[0m] Starting of \x1b[0;1;39mArbitrary Exec…Automount Point\x1b[0m not supported." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.241598055-05:00" level=debug msg="[    1.095494] systemd[1]: Reached target Local Encrypted Volumes." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.242178791-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Reached target \x1b[0;1;39mLocal Encrypted Volumes\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.242657845-05:00" level=debug msg="[    1.096678] systemd[1]: Reached target Paths." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.243132342-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Reached target \x1b[0;1;39mPaths\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.243600575-05:00" level=debug msg="[    1.097623] systemd[1]: Reached target Slices." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.244059806-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Reached target \x1b[0;1;39mSlices\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.244514031-05:00" level=debug msg="[    1.098544] systemd[1]: Reached target Swap." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.244957229-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Reached target \x1b[0;1;39mSwap\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.245685172-05:00" level=debug msg="[    1.099489] systemd[1]: Listening on initctl Compatibility Named Pipe." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.246282012-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Listening on \x1b[0;1;39minitctl Compatibility Named Pipe\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.246997278-05:00" level=debug msg="[    1.100919] systemd[1]: Listening on Journal Audit Socket." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.247650771-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Listening on \x1b[0;1;39mJournal Audit Socket\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.248324489-05:00" level=debug msg="[    1.102196] systemd[1]: Listening on Journal Socket (/dev/log)." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.248911886-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Listening on \x1b[0;1;39mJournal Socket (/dev/log)\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.249474875-05:00" level=debug msg="[    1.103432] systemd[1]: Listening on Journal Socket." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.249999219-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Listening on \x1b[0;1;39mJournal Socket\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.250877203-05:00" level=debug msg="[    1.104777] systemd[1]: Listening on udev Control Socket." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.251425496-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Listening on \x1b[0;1;39mudev Control Socket\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.252053191-05:00" level=debug msg="[    1.105972] systemd[1]: Listening on udev Kernel Socket." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.252602032-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Listening on \x1b[0;1;39mudev Kernel Socket\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.252724651-05:00" level=debug attempt=10 error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker vmID=vm1
+time="2022-11-23T04:39:31.253078225-05:00" level=debug msg="[    1.107114] systemd[1]: Reached target Sockets." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.253643068-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Reached target \x1b[0;1;39mSockets\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.254699017-05:00" level=debug msg="[    1.108615] systemd[1]: Mounting Huge Pages File System..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.255126221-05:00" level=debug msg="         Mounting \x1b[0;1;39mHuge Pages File System\x1b[0m..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.256297122-05:00" level=debug msg="[    1.110115] systemd[1]: Mounting POSIX Message Queue File System..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.256762378-05:00" level=debug msg="         Mounting \x1b[0;1;39mPOSIX Message Queue File System\x1b[0m..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.258190961-05:00" level=debug msg="[    1.112089] systemd[1]: Mounting Kernel Debug File System..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.258638781-05:00" level=debug msg="         Mounting \x1b[0;1;39mKernel Debug File System\x1b[0m..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.261561603-05:00" level=debug msg="[    1.115162] systemd[1]: Condition check resulted in Kernel Trace File System being skipped." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.265028416-05:00" level=debug msg="[    1.118377] systemd[1]: Condition check resulted in Create list of static device nodes for the current kernel being skipped." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.269844297-05:00" level=debug msg="[    1.123687] systemd[1]: Starting Load Kernel Module configfs..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.271254775-05:00" level=debug msg="         Starting \x1b[0;1;39mLoad Kernel Module configfs\x1b[0m..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.275079588-05:00" level=debug msg="[    1.128947] systemd[1]: Starting Load Kernel Module fuse..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.275496330-05:00" level=debug msg="         Starting \x1b[0;1;39mLoad Kernel Module fuse\x1b[0m..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.277151546-05:00" level=debug msg="[    1.130691] systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.278391298-05:00" level=debug msg="[    1.132297] systemd[1]: Starting Journal Service..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.278791955-05:00" level=debug msg="         Starting \x1b[0;1;39mJournal Service\x1b[0m..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.279945570-05:00" level=debug msg="[    1.133900] systemd[1]: Starting Load Kernel Modules..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.280339738-05:00" level=debug msg="         Starting \x1b[0;1;39mLoad Kernel Modules\x1b[0m..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.286372908-05:00" level=debug msg="[    1.140158] systemd[1]: Starting Remount Root and Kernel File Systems..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.286894786-05:00" level=debug msg="         Starting \x1b[0;1;39mRemount Root and Kernel File Systems\x1b[0m..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.299362214-05:00" level=debug msg="[    1.153250] systemd[1]: Starting Coldplug All udev Devices..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.299831060-05:00" level=debug msg="         Starting \x1b[0;1;39mColdplug All udev Devices\x1b[0m..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.304531682-05:00" level=debug msg="[    1.158447] systemd[1]: Mounted Huge Pages File System." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.305137494-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Mounted \x1b[0;1;39mHuge Pages File System\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.311978820-05:00" level=debug msg="[    1.165821] systemd[1]: Mounted POSIX Message Queue File System." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.312575722-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Mounted \x1b[0;1;39mPOSIX Message Queue File System\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.318428017-05:00" level=debug msg="[    1.172366] systemd[1]: Mounted Kernel Debug File System." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.318994591-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Mounted \x1b[0;1;39mKernel Debug File System\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.321781872-05:00" level=debug msg="[    1.175677] systemd[1]: modprobe@configfs.service: Succeeded." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.322527193-05:00" level=debug msg="[    1.176447] systemd[1]: Finished Load Kernel Module configfs." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.323085551-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Finished \x1b[0;1;39mLoad Kernel Module configfs\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.325612484-05:00" level=debug msg="[    1.179478] systemd[1]: modprobe@fuse.service: Succeeded." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.328537313-05:00" level=debug msg="[    1.182458] systemd[1]: Finished Load Kernel Module fuse." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.329061997-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Finished \x1b[0;1;39mLoad Kernel Module fuse\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.329875438-05:00" level=debug msg="[    1.183841] systemd[1]: Finished Load Kernel Modules." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.330777644-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Finished \x1b[0;1;39mLoad Kernel Modules\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.334330752-05:00" level=debug msg="[    1.188142] systemd[1]: Finished Remount Root and Kernel File Systems." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.334937456-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Finished \x1b[0;1;39mRemount Root and Kernel File Systems\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.337960127-05:00" level=debug msg="[    1.191864] systemd[1]: Mounting FUSE Control File System..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.338478875-05:00" level=debug msg="         Mounting \x1b[0;1;39mFUSE Control File System\x1b[0m..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.349183438-05:00" level=debug msg="[    1.202722] systemd[1]: Condition check resulted in Kernel Configuration File System being skipped." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.351489107-05:00" level=debug msg="[    1.205087] systemd[1]: Condition check resulted in Rebuild Hardware Database being skipped." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.352385552-05:00" level=debug msg="[    1.205960] systemd[1]: Condition check resulted in Platform Persistent Storage Archival being skipped." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.352753017-05:00" level=debug attempt=11 error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker vmID=vm1
+time="2022-11-23T04:39:31.353640573-05:00" level=debug msg="[    1.207242] systemd[539]: modprobe@configfs.service: Executable /sbin/modprobe missing, skipping: No such file or directory" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.355239100-05:00" level=debug msg="[    1.208868] systemd[540]: modprobe@fuse.service: Executable /sbin/modprobe missing, skipping: No such file or directory" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.359004442-05:00" level=debug msg="[    1.212917] systemd[1]: Starting Load/Save Random Seed..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.359413275-05:00" level=debug msg="         Starting \x1b[0;1;39mLoad/Save Random Seed\x1b[0m..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.364143602-05:00" level=debug msg="[    1.218046] systemd[1]: Starting Apply Kernel Variables..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.364570397-05:00" level=debug msg="         Starting \x1b[0;1;39mApply Kernel Variables\x1b[0m..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.365604634-05:00" level=debug msg="[    1.219500] systemd[1]: Starting Create System Users..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.366146482-05:00" level=debug msg="         Starting \x1b[0;1;39mCreate System Users\x1b[0m..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.367196025-05:00" level=debug msg="[    1.221179] systemd[1]: Started Journal Service." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.367680014-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Started \x1b[0;1;39mJournal Service\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.378515590-05:00" level=debug msg="[    1.232147] systemd-sysctl[759]: Couldn't write '1' to 'fs/protected_fifos', ignoring: No such file or directory" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.379801399-05:00" level=debug msg="[    1.233728] systemd[1]: Finished Coldplug All udev Devices." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.380410342-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Finished \x1b[0;1;39mColdplug All udev Devices\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.381854679-05:00" level=debug msg="[    1.235778] systemd[1]: Mounted FUSE Control File System." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.382435339-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Mounted \x1b[0;1;39mFUSE Control File System\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.384458042-05:00" level=debug msg="[    1.238033] systemd-sysctl[759]: Couldn't write '2' to 'fs/protected_regular', ignoring: No such file or directory" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.385524423-05:00" level=debug msg="[    1.239473] systemd[1]: Finished Load/Save Random Seed." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.386167852-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Finished \x1b[0;1;39mLoad/Save Random Seed\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.387990094-05:00" level=debug msg="[    1.241820] systemd-sysusers[760]: Creating group systemd-timesync with gid 999." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.388593383-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Finished \x1b[0;1;39mApply Kernel Variables\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.389129872-05:00" level=debug msg="[    1.243096] systemd[1]: Finished Apply Kernel Variables." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.391066783-05:00" level=debug msg="[    1.244685] systemd-sysusers[760]: Creating user systemd-timesync (systemd Time Synchronization) with uid 999 and gid 999." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.392257853-05:00" level=debug msg="[    1.246079] systemd-sysusers[760]: Creating group systemd-coredump with gid 998." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.393281441-05:00" level=debug msg="         Starting \x1b[0;1;39mFlush Journal to Persistent Storage\x1b[0m..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.394145122-05:00" level=debug msg="[    1.247813] systemd-sysusers[760]: Creating user systemd-coredump (systemd Core Dumper) with uid 998 and gid 998." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.395268660-05:00" level=debug msg="[    1.249074] systemd[1]: Condition check resulted in First Boot Complete being skipped." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.395807685-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Finished \x1b[0;1;39mCreate System Users\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.396452547-05:00" level=debug msg="[    1.250334] systemd[1]: Starting Flush Journal to Persistent Storage..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.401875632-05:00" level=debug msg="[    1.255574] systemd-journald[541]: Received client request to flush runtime journal." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.402503930-05:00" level=debug msg="         Starting \x1b[0;1;39mCreate Static Device Nodes in /dev\x1b[0m..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.410768606-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Finished \x1b[0;1;39mFlush Journal to Persistent Storage\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.411422525-05:00" level=debug msg="[    1.265374] systemd[1]: Finished Create System Users." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.412171768-05:00" level=debug msg="[    1.266041] systemd[1]: Starting Create Static Device Nodes in /dev..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.413320237-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Finished \x1b[0;1;39mCreate Static Device Nodes in /dev\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.413992370-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Reached target \x1b[0;1;39mLocal File Systems (Pre)\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.414577528-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Reached target \x1b[0;1;39mLocal File Systems\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.415661229-05:00" level=debug msg="[    1.269538] systemd[1]: Finished Flush Journal to Persistent Storage." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.416251178-05:00" level=debug msg="         Starting \x1b[0;1;39mCreate Volatile Files and Directories\x1b[0m..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.416900794-05:00" level=debug msg="[    1.270800] systemd[1]: Finished Create Static Device Nodes in /dev." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.418066372-05:00" level=debug msg="[    1.271968] systemd[1]: Reached target Local File Systems (Pre)." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.418810669-05:00" level=debug msg="         Starting \x1b[0;1;39mRule-based Manage…for Device Events and Files\x1b[0m..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.419537102-05:00" level=debug msg="[    1.273477] systemd[1]: Reached target Local File Systems." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.420358543-05:00" level=debug msg="[    1.274059] systemd[1]: Condition check resulted in Store a System Token in an EFI Variable being skipped." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.430342627-05:00" level=debug msg="[    1.284044] systemd[1]: Condition check resulted in Commit a transient machine-id on disk being skipped." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.431643821-05:00" level=debug msg="[    1.285477] systemd[1]: Starting Create Volatile Files and Directories..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.434378589-05:00" level=debug msg="[    1.288176] systemd[1]: Starting Rule-based Manager for Device Events and Files..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.435536726-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Finished \x1b[0;1;39mCreate Volatile Files and Directories\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.436807809-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Started \x1b[0;1;39mEntropy Daemon based on the HAVEGE algorithm\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.442390285-05:00" level=debug msg="[    1.296261] systemd[1]: Finished Create Volatile Files and Directories." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.443011545-05:00" level=debug msg="         Starting \x1b[0;1;39mUpdate UTMP about System Boot/Shutdown\x1b[0m..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.451297437-05:00" level=debug msg="[    1.305113] systemd[1]: Started Entropy Daemon based on the HAVEGE algorithm." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.452890004-05:00" level=debug attempt=12 error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker vmID=vm1
+time="2022-11-23T04:39:31.454192514-05:00" level=debug msg="[    1.308030] systemd[1]: Starting Update UTMP about System Boot/Shutdown..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.456356965-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Finished \x1b[0;1;39mUpdate UTMP about System Boot/Shutdown\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.457077365-05:00" level=debug msg="[    1.310943] systemd[1]: Finished Update UTMP about System Boot/Shutdown." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.463558718-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Started \x1b[0;1;39mRule-based Manager for Device Events and Files\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.464210779-05:00" level=debug msg="[    1.318067] systemd[1]: Started Rule-based Manager for Device Events and Files." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.464913335-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Reached target \x1b[0;1;39mSystem Initialization\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.465484428-05:00" level=debug msg="[    1.319412] systemd[1]: Reached target System Initialization." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.466721942-05:00" level=debug msg="[    1.320529] systemd[1]: Started Periodic ext4 Online Metadata Check for All Filesystems." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.470744497-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Started \x1b[0;1;39mPeriodic ext4 Onli…ata Check for All Filesystems\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.472027827-05:00" level=debug msg="[    1.325913] haveged[766]: haveged: command socket is listening at fd 3" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.472803036-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Started \x1b[0;1;39mDiscard unused blocks once a week\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.473414820-05:00" level=debug msg="[    1.327304] systemd[1]: Started Discard unused blocks once a week." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.478281569-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Started \x1b[0;1;39mDaily Cleanup of Temporary Directories\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.478880589-05:00" level=debug msg="[    1.332785] systemd[1]: Started Daily Cleanup of Temporary Directories." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.480999602-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Reached target \x1b[0;1;39mBasic System\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.481535790-05:00" level=debug msg="[    1.335507] systemd[1]: Reached target Basic System." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.482172400-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Reached target \x1b[0;1;39mTimers\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.482684626-05:00" level=debug msg="[    1.336677] systemd[1]: Reached target Timers." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.485389244-05:00" level=debug msg="[    1.339336] systemd[1]: Started Firecracker VM agent." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.485983836-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Started \x1b[0;1;39mFirecracker VM agent\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.487183759-05:00" level=debug msg="[    1.341133] systemd[1]: Starting Stargz Snapshotter..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.488909795-05:00" level=debug msg="         Starting \x1b[0;1;39mStargz Snapshotter\x1b[0m..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.504974593-05:00" level=debug msg="[    1.358918] systemd[1]: Started Stargz Snapshotter." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.506339555-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Started \x1b[0;1;39mStargz Snapshotter\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.522652847-05:00" level=debug msg="[    1.376539] systemd[1]: Started Metrics Socat." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.524000905-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Started \x1b[0;1;39mMetrics Socat\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.538623770-05:00" level=debug msg="[    1.392528] systemd[1]: Started Socat." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.539147708-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Started \x1b[0;1;39mSocat\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.544876367-05:00" level=debug msg="[    1.398740] systemd[1]: Reached target Firecracker containerd VM." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.546774995-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Reached target \x1b[0;1;39mFirecracker containerd VM\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.551964047-05:00" level=debug msg="[    1.405738] systemd[1]: Startup finished in 974ms (kernel) + 431ms (userspace) = 1.405s." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.555127993-05:00" level=debug attempt=13 error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker vmID=vm1
+time="2022-11-23T04:39:31.653022709-05:00" level=debug attempt=14 error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker vmID=vm1
+time="2022-11-23T04:39:31.754077372-05:00" level=debug attempt=15 error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker vmID=vm1
+time="2022-11-23T04:39:31.853973705-05:00" level=debug attempt=16 error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker vmID=vm1
+time="2022-11-23T04:39:31.862655805-05:00" level=debug msg="[    1.716125] systemd-udevd[773]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:31.953397708-05:00" level=debug attempt=17 error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker vmID=vm1
+time="2022-11-23T04:39:31.988870713-05:00" level=debug msg="[    1.842655] systemd-udevd[777]: Using default interface naming scheme 'v247'." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:32.052170880-05:00" level=debug msg="[    1.905737] systemd-udevd[777]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:32.052752548-05:00" level=debug attempt=18 error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker vmID=vm1
+time="2022-11-23T04:39:32.141202581-05:00" level=debug msg="[    1.994864] agent[780]: time=\"2022-11-23T09:39:32Z\" level=info msg=\"creating task service\"" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:32.153174561-05:00" level=info msg="successfully started the VM" runtime=aws.firecracker vmID=vm1
+time="2022-11-23T04:39:32.153322557-05:00" level=debug msg="event published" ns=vm1 runtime=aws.firecracker topic=/firecracker-vm/start type=VMStart
+time="2022-11-23T04:39:32.154003510-05:00" level=debug msg="event forwarded" ns=vm1 topic=/firecracker-vm/start type=VMStart
+time="2022-11-23T04:39:32.154652619-05:00" level=debug msg="Setting vm metadata"
+time="2022-11-23T04:39:32.155140712-05:00" level=info msg="setting VM metadata" runtime=aws.firecracker vmID=vm1
+time="2022-11-23T04:39:32.155969451-05:00" level=info msg="SetMetadata successful" runtime=aws.firecracker
+time="2022-11-23T04:39:32.226451772-05:00" level=debug msg="[    2.079982] haveged[766]: haveged: ver: 1.9.14; arch: x86; vend: GenuineIntel; build: (gcc 10.2.1 ITV); collect: 128K" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:32.229115631-05:00" level=debug msg="[    2.082730] haveged[766]: haveged: cpu: (L4 VC); data: 32K (L4 V); inst: 32K (L4 V); idx: 24/40; sz: 32154/54019" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:32.230680465-05:00" level=debug msg="[    2.084327] haveged[766]: haveged: tot tests(BA8): A:1/1 B:1/1 continuous tests(B):  last entropy estimate 7.99934" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:32.232885803-05:00" level=debug msg="[    2.086817] haveged[766]: haveged: fills: 0, generated: 0" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:32.245178083-05:00" level=debug msg="[    2.099252] random: crng init done" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:32.457535287-05:00" level=debug msg="(*service).Write started" expected="sha256:3072dc67a6c382e000c3a60911488be108eccf7b7ffaee826489346980d36360" ref="index-sha256:3072dc67a6c382e000c3a60911488be108eccf7b7ffaee826489346980d36360" total=289
+time="2022-11-23T04:39:32.561021618-05:00" level=debug msg="(*service).Write started" expected="sha256:07de61ed5cef583643702d85315c20e24d9ce8fc6961481806c90912e1e7bef3" ref="manifest-sha256:07de61ed5cef583643702d85315c20e24d9ce8fc6961481806c90912e1e7bef3" total=594
+time="2022-11-23T04:39:32.696874455-05:00" level=debug msg="(*service).Write started" expected="sha256:644de93aece85d86312aec7d832bb9caa767a10e1b4fa750a1e35f415ecfac2f" ref="config-sha256:644de93aece85d86312aec7d832bb9caa767a10e1b4fa750a1e35f415ecfac2f" total=1311
+time="2022-11-23T04:39:32.901112107-05:00" level=debug msg="stat snapshot" key="sha256:d2742e2df4a4530fada3b8dbea2b65c4b6fc03fc89f250e8077ecd0425e1ab6c"
+time="2022-11-23T04:39:32.901859233-05:00" level=debug msg="prepare snapshot" key="extract-901412810-ByGC sha256:d2742e2df4a4530fada3b8dbea2b65c4b6fc03fc89f250e8077ecd0425e1ab6c" parent=
+time="2022-11-23T04:39:32.905264895-05:00" level=debug msg="get VM info: VMID:\"vm1\" "
+time="2022-11-23T04:39:33.034328032-05:00" level=debug msg="[    2.886833] containerd-stargz-grpc[783]: {\"key\":\"vm1/17/extract-901412810-ByGC sha256:d2742e2df4a4530fada3b8dbea2b65c4b6fc03fc89f250e8077ecd0425e1ab6c\",\"level\":\"info\",\"msg\":\"preparing filesystem mount at mountpoint=/var/lib/containerd-stargz-grpc/snapshotter/snapshots/1/fs\",\"parent\":\"\",\"time\":\"2022-11-23T09:39:32.982815989Z\"}" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:33.040077597-05:00" level=debug msg="[    2.892046] containerd-stargz-grpc[783]: {\"key\":\"vm1/17/extract-901412810-ByGC sha256:d2742e2df4a4530fada3b8dbea2b65c4b6fc03fc89f250e8077ecd0425e1ab6c\",\"level\":\"debug\",\"mountpoint\":\"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/1/fs\",\"msg\":\"resolving\",\"parent\":\"\",\"src\":\"ghcr.io/firecracker-microvm/firecracker-containerd/amazonlinux:latest-esgz/sha256:292c8ba7109178467d05d83b3ae565a17550b58bab8e10846450176ddd0eb1ff\",\"time\":\"2022-11-23T09:39:32.987538495Z\"}" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:33.044096537-05:00" level=debug msg="[    2.895008] containerd-stargz-grpc[783]: {\"digest\":\"sha256:292c8ba7109178467d05d83b3ae565a17550b58bab8e10846450176ddd0eb1ff\",\"error\":null,\"key\":\"vm1/17/extract-901412810-ByGC sha256:d2742e2df4a4530fada3b8dbea2b65c4b6fc03fc89f250e8077ecd0425e1ab6c\",\"level\":\"debug\",\"mountpoint\":\"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/1/fs\",\"msg\":\"using default handler\",\"parent\":\"\",\"ref\":\"ghcr.io/firecracker-microvm/firecracker-containerd/amazonlinux:latest-esgz\",\"src\":\"ghcr.io/firecracker-microvm/firecracker-containerd/amazonlinux:latest-esgz/sha256:292c8ba7109178467d05d83b3ae565a17550b58bab8e10846450176ddd0eb1ff\",\"time\":\"2022-11-23T09:39:32.987611345Z\"}" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:33.154767752-05:00" level=debug msg="[    3.001932] containerd-stargz-grpc[783]: {\"key\":\"vm1/17/extract-901412810-ByGC sha256:d2742e2df4a4530fada3b8dbea2b65c4b6fc03fc89f250e8077ecd0425e1ab6c\",\"level\":\"info\",\"mountpoint\":\"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/1/fs\",\"msg\":\"Received status code: 401 Unauthorized. Refreshing creds...\",\"parent\":\"\",\"src\":\"ghcr.io/firecracker-microvm/firecracker-containerd/amazonlinux:latest-esgz/sha256:292c8ba7109178467d05d83b3ae565a17550b58bab8e10846450176ddd0eb1ff\",\"time\":\"2022-11-23T09:39:33.100051205Z\"}" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:34.272670348-05:00" level=debug msg="[    4.124474] containerd-stargz-grpc[783]: {\"key\":\"vm1/17/extract-901412810-ByGC sha256:d2742e2df4a4530fada3b8dbea2b65c4b6fc03fc89f250e8077ecd0425e1ab6c\",\"level\":\"debug\",\"mountpoint\":\"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/1/fs\",\"msg\":\"resolved\",\"parent\":\"\",\"src\":\"ghcr.io/firecracker-microvm/firecracker-containerd/amazonlinux:latest-esgz/sha256:292c8ba7109178467d05d83b3ae565a17550b58bab8e10846450176ddd0eb1ff\",\"time\":\"2022-11-23T09:39:34.220022386Z\"}" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:34.283871193-05:00" level=debug msg="[    4.136381] containerd-stargz-grpc[783]: {\"key\":\"vm1/17/extract-901412810-ByGC sha256:d2742e2df4a4530fada3b8dbea2b65c4b6fc03fc89f250e8077ecd0425e1ab6c\",\"level\":\"debug\",\"mountpoint\":\"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/1/fs\",\"msg\":\"verified\",\"parent\":\"\",\"time\":\"2022-11-23T09:39:34.220271665Z\"}" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:34.311197352-05:00" level=debug msg="[    4.163969] containerd-stargz-grpc[783]: {\"key\":\"vm1/17/extract-901412810-ByGC sha256:d2742e2df4a4530fada3b8dbea2b65c4b6fc03fc89f250e8077ecd0425e1ab6c\",\"level\":\"debug\",\"msg\":\"prepared remote snapshot\",\"parent\":\"\",\"remote-snapshot-prepared\":\"true\",\"time\":\"2022-11-23T09:39:34.262113161Z\"}" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:34.349756097-05:00" level=debug msg="stat snapshot" key="sha256:d2742e2df4a4530fada3b8dbea2b65c4b6fc03fc89f250e8077ecd0425e1ab6c"
+time="2022-11-23T04:39:34.355980199-05:00" level=debug msg="create image" name="ghcr.io/firecracker-microvm/firecracker-containerd/amazonlinux:latest-esgz" target="sha256:3072dc67a6c382e000c3a60911488be108eccf7b7ffaee826489346980d36360"
+time="2022-11-23T04:39:34.356806141-05:00" level=debug msg="event published" ns=vm1 topic=/images/create type=containerd.services.images.v1.ImageCreate
+time="2022-11-23T04:39:34.362756515-05:00" level=debug msg="prepare snapshot" key=remoteSnapshotterDemo-snap parent="sha256:d2742e2df4a4530fada3b8dbea2b65c4b6fc03fc89f250e8077ecd0425e1ab6c"
+time="2022-11-23T04:39:34.364466646-05:00" level=debug msg="garbage collected" d="649.784µs"
+time="2022-11-23T04:39:34.372078081-05:00" level=debug msg="[    4.223803] containerd-stargz-grpc[783]: {\"key\":\"sha256:d2742e2df4a4530fada3b8dbea2b65c4b6fc03fc89f250e8077ecd0425e1ab6c\",\"level\":\"debug\",\"msg\":\"checking layer availability\",\"time\":\"2022-11-23T09:39:34.321912418Z\"}" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:34.376938437-05:00" level=debug msg="[    4.229473] containerd-stargz-grpc[783]: {\"key\":\"sha256:d2742e2df4a4530fada3b8dbea2b65c4b6fc03fc89f250e8077ecd0425e1ab6c\",\"level\":\"debug\",\"mount-point\":\"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/1/fs\",\"msg\":\"checking mount point\",\"time\":\"2022-11-23T09:39:34.327562065Z\"}" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:34.495386558-05:00" level=debug msg="[    4.347732] containerd-stargz-grpc[783]: {\"layer_sha\":\"sha256:292c8ba7109178467d05d83b3ae565a17550b58bab8e10846450176ddd0eb1ff\",\"level\":\"info\",\"metrics\":\"latency\",\"msg\":\"value=191.174822 milliseconds\",\"operation\":\"prefetch_download\",\"time\":\"2022-11-23T09:39:34.445866457Z\"}" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:34.545518543-05:00" level=debug msg="[    4.398288] containerd-stargz-grpc[783]: {\"layer_sha\":\"sha256:292c8ba7109178467d05d83b3ae565a17550b58bab8e10846450176ddd0eb1ff\",\"level\":\"info\",\"metrics\":\"latency\",\"msg\":\"value=48.318276 milliseconds\",\"operation\":\"prefetch_decompress\",\"time\":\"2022-11-23T09:39:34.496427252Z\"}" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:34.547310007-05:00" level=debug msg="[    4.400046] containerd-stargz-grpc[783]: {\"layer_sha\":\"sha256:292c8ba7109178467d05d83b3ae565a17550b58bab8e10846450176ddd0eb1ff\",\"level\":\"info\",\"metrics\":\"latency\",\"msg\":\"value=248.682987 milliseconds; prefetch_size=1532429 bytes\",\"operation\":\"prefetch_total\",\"time\":\"2022-11-23T09:39:34.498217553Z\"}" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:34.549347985-05:00" level=debug msg="[    4.402829] containerd-stargz-grpc[783]: {\"level\":\"debug\",\"msg\":\"completed to prefetch\",\"time\":\"2022-11-23T09:39:34.499964022Z\"}" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:34.551765756-05:00" level=debug msg="event published" ns=vm1 topic=/snapshot/prepare type=containerd.events.SnapshotPrepare
+time="2022-11-23T04:39:34.558207369-05:00" level=debug msg="event published" ns=vm1 topic=/containers/create type=containerd.events.ContainerCreate
+time="2022-11-23T04:39:34.582391424-05:00" level=debug msg="garbage collected" d="709.39µs"
+time="2022-11-23T04:39:49.575757270-05:00" level=debug msg="get snapshot mounts" key=remoteSnapshotterDemo-snap
+time="2022-11-23T04:39:49.650099178-05:00" level=debug msg="[   19.502970] containerd-stargz-grpc[783]: {\"key\":\"vm1/18/remoteSnapshotterDemo-snap\",\"level\":\"debug\",\"msg\":\"checking layer availability\",\"time\":\"2022-11-23T09:39:49.580277702Z\"}" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:49.655097387-05:00" level=debug msg="[   19.507761] containerd-stargz-grpc[783]: {\"key\":\"vm1/18/remoteSnapshotterDemo-snap\",\"level\":\"debug\",\"mount-point\":\"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/2/fs\",\"msg\":\"layer is normal snapshot(overlayfs)\",\"time\":\"2022-11-23T09:39:49.583693381Z\"}" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:49.659261796-05:00" level=debug msg="[   19.511973] containerd-stargz-grpc[783]: {\"key\":\"vm1/18/remoteSnapshotterDemo-snap\",\"level\":\"debug\",\"mount-point\":\"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/1/fs\",\"msg\":\"checking mount point\",\"time\":\"2022-11-23T09:39:49.594926553Z\"}" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:49.717266037-05:00" level=debug msg=StartShim runtime=aws.firecracker task_id=remoteSnapshotterDemo
+time="2022-11-23T04:39:49.717950805-05:00" level=debug msg="create VM request: VMID:\"vm1\" "
+time="2022-11-23T04:39:49.718003060-05:00" level=debug msg="using namespace: vm1"
+time="2022-11-23T04:39:49.718392921-05:00" level=info msg="successfully started shim (git commit: 24f1fcf99ebf6edcb94edd71a2affbcdae6b08e7)." runtime=aws.firecracker task_id=remoteSnapshotterDemo vmID=vm1
+time="2022-11-23T04:39:49.720535453-05:00" level=debug msg="creating task" bundle=/run/firecracker-containerd/io.containerd.runtime.v2.task/vm1/remoteSnapshotterDemo checkpoint= runtime=aws.firecracker stderr=/run/containerd/fifo/4050707667/remoteSnapshotterDemo-stderr stdin=/run/containerd/fifo/4050707667/remoteSnapshotterDemo-stdin stdout=/run/containerd/fifo/4050707667/remoteSnapshotterDemo-stdout task_id=remoteSnapshotterDemo terminal=false vmID=vm1
+time="2022-11-23T04:39:49.720793337-05:00" level=debug msg="noop operation returning shim dir for JailPath" jailer=noop runtime=aws.firecracker vmID=vm1
+time="2022-11-23T04:39:49.817209584-05:00" level=debug msg="[   19.670566] agent[780]: time=\"2022-11-23T09:39:49Z\" level=info msg=create ExecID= TaskID=remoteSnapshotterDemo" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:49.822963801-05:00" level=debug ExecID= TaskID=remoteSnapshotterDemo attempt=1 direction=read error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker stream=stderr vmID=vm1
+time="2022-11-23T04:39:49.823082480-05:00" level=debug ExecID= TaskID=remoteSnapshotterDemo attempt=1 direction=write error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker stream=stdin vmID=vm1
+time="2022-11-23T04:39:49.823181729-05:00" level=debug ExecID= TaskID=remoteSnapshotterDemo attempt=1 direction=read error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker stream=stdout vmID=vm1
+time="2022-11-23T04:39:49.923521358-05:00" level=debug ExecID= TaskID=remoteSnapshotterDemo attempt=2 direction=read error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker stream=stdout vmID=vm1
+time="2022-11-23T04:39:49.923570348-05:00" level=debug ExecID= TaskID=remoteSnapshotterDemo attempt=2 direction=write error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker stream=stdin vmID=vm1
+time="2022-11-23T04:39:49.923654196-05:00" level=debug ExecID= TaskID=remoteSnapshotterDemo attempt=2 direction=read error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker stream=stderr vmID=vm1
+time="2022-11-23T04:39:50.024060263-05:00" level=debug ExecID= TaskID=remoteSnapshotterDemo attempt=3 direction=read error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker stream=stdout vmID=vm1
+time="2022-11-23T04:39:50.024183409-05:00" level=debug ExecID= TaskID=remoteSnapshotterDemo attempt=3 direction=write error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker stream=stdin vmID=vm1
+time="2022-11-23T04:39:50.024295094-05:00" level=debug ExecID= TaskID=remoteSnapshotterDemo attempt=3 direction=read error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker stream=stderr vmID=vm1
+time="2022-11-23T04:39:50.122565566-05:00" level=debug ExecID= TaskID=remoteSnapshotterDemo attempt=4 direction=read error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker stream=stdout vmID=vm1
+time="2022-11-23T04:39:50.122690156-05:00" level=debug ExecID= TaskID=remoteSnapshotterDemo attempt=4 direction=write error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker stream=stdin vmID=vm1
+time="2022-11-23T04:39:50.122722038-05:00" level=debug ExecID= TaskID=remoteSnapshotterDemo attempt=4 direction=read error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker stream=stderr vmID=vm1
+time="2022-11-23T04:39:50.222758771-05:00" level=debug ExecID= TaskID=remoteSnapshotterDemo attempt=5 direction=read error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker stream=stderr vmID=vm1
+time="2022-11-23T04:39:50.223615936-05:00" level=debug ExecID= TaskID=remoteSnapshotterDemo attempt=5 direction=write error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker stream=stdin vmID=vm1
+time="2022-11-23T04:39:50.223700148-05:00" level=debug ExecID= TaskID=remoteSnapshotterDemo attempt=5 direction=read error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker stream=stdout vmID=vm1
+time="2022-11-23T04:39:50.292694424-05:00" level=debug msg="[   20.145903] systemd[1]: tmp-containerd\\x2dmount1025255515.mount: Succeeded." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.323133062-05:00" level=debug ExecID= TaskID=remoteSnapshotterDemo attempt=6 direction=read error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker stream=stderr vmID=vm1
+time="2022-11-23T04:39:50.323302911-05:00" level=debug ExecID= TaskID=remoteSnapshotterDemo attempt=6 direction=read error="temporary vsock dial failure: vsock ack message failure: failed to read \"OK <port>\" within 1s: EOF" runtime=aws.firecracker stream=stdout vmID=vm1
+time="2022-11-23T04:39:50.323307602-05:00" level=debug msg="begin copying io" ExecID= TaskID=remoteSnapshotterDemo runtime=aws.firecracker stream=stdin vmID=vm1
+time="2022-11-23T04:39:50.423073457-05:00" level=debug msg="begin copying io" ExecID= TaskID=remoteSnapshotterDemo runtime=aws.firecracker stream=stderr vmID=vm1
+time="2022-11-23T04:39:50.423159936-05:00" level=debug msg="begin copying io" ExecID= TaskID=remoteSnapshotterDemo runtime=aws.firecracker stream=stdout vmID=vm1
+time="2022-11-23T04:39:50.475330359-05:00" level=debug msg="[   20.328843] systemd[1]: container-remoteSnapshotterDemo-rootfs.mount: Succeeded." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.510110354-05:00" level=debug msg="[   20.362943] agent[780]: time=\"2022-11-23T09:39:50Z\" level=info msg=\"connection was closed: read vsock hypervisor(0):11000->host(2):1073741861: use of closed network connection\" ExecID= TaskID=remoteSnapshotterDemo stream=stdin" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.522900416-05:00" level=error error="failed to create task: rpc error: code = Unknown desc = OCI runtime create failed: unable to retrieve OCI runtime error (open /container/remoteSnapshotterDemo/log.json: no such file or directory): runc did not terminate successfully: exit status 2" runtime=aws.firecracker task_id=remoteSnapshotterDemo vmID=vm1
+time="2022-11-23T04:39:50.523054146-05:00" level=debug msg="copied 0" ExecID= TaskID=remoteSnapshotterDemo runtime=aws.firecracker stream=stdin vmID=vm1
+time="2022-11-23T04:39:50.523103571-05:00" level=info msg="connection was closed: read /proc/self/fd/12: file already closed" ExecID= TaskID=remoteSnapshotterDemo runtime=aws.firecracker stream=stdin vmID=vm1
+time="2022-11-23T04:39:50.523138483-05:00" level=error msg="error closing io stream" ExecID= TaskID=remoteSnapshotterDemo error="1 error occurred:\n\t* close unix @->firecracker.vsock: use of closed network connection\n\n" runtime=aws.firecracker stream=stdin vmID=vm1
+time="2022-11-23T04:39:50.523175562-05:00" level=debug msg="end copying io" ExecID= TaskID=remoteSnapshotterDemo runtime=aws.firecracker stream=stdin vmID=vm1
+time="2022-11-23T04:39:50.523328306-05:00" level=debug msg=delete exec_id= runtime=aws.firecracker task_id=remoteSnapshotterDemo
+time="2022-11-23T04:39:50.535124915-05:00" level=debug msg="failed to delete task" error="rpc error: code = NotFound desc = container not created: not found" id=remoteSnapshotterDemo
+time="2022-11-23T04:39:50.535426046-05:00" level=debug msg=Shutdown now=false runtime=aws.firecracker task_id=remoteSnapshotterDemo vmID=vm1
+time="2022-11-23T04:39:50.535673302-05:00" level=info msg="shim disconnected" id=remoteSnapshotterDemo
+time="2022-11-23T04:39:50.535755620-05:00" level=warning msg="cleaning up after shim disconnected" id=remoteSnapshotterDemo namespace=vm1
+time="2022-11-23T04:39:50.535779535-05:00" level=info msg="cleaning up dead shim"
+time="2022-11-23T04:39:50.562062943-05:00" level=warning msg="failed to clean up after shim disconnected" error="proto: DeleteResponse: wiretype end group for non-group" id=remoteSnapshotterDemo namespace=vm1
+time="2022-11-23T04:39:50.562181189-05:00" level=error msg="copy shim log" error="read /proc/self/fd/3: file already closed"
+time="2022-11-23T04:39:50.565440883-05:00" level=debug msg="event published" ns=vm1 topic=/containers/delete type=containerd.events.ContainerDelete
+time="2022-11-23T04:39:50.565860462-05:00" level=debug msg="delete image" name="ghcr.io/firecracker-microvm/firecracker-containerd/amazonlinux:latest-esgz"
+time="2022-11-23T04:39:50.566377138-05:00" level=debug msg="event published" ns=vm1 topic=/images/delete type=containerd.services.images.v1.ImageDelete
+time="2022-11-23T04:39:50.566746735-05:00" level=debug msg="stop VM: VMID:\"vm1\" "
+time="2022-11-23T04:39:50.567177957-05:00" level=debug msg=StopVM runtime=aws.firecracker timeout_seconds=0 vmID=vm1
+time="2022-11-23T04:39:50.567924453-05:00" level=info msg="GetInstanceInfo successful" runtime=aws.firecracker
+time="2022-11-23T04:39:50.567952579-05:00" level=info msg="gracefully shutdown VM" runtime=aws.firecracker vmID=vm1
+time="2022-11-23T04:39:50.581165436-05:00" level=debug msg="[   20.434604] agent[780]: time=\"2022-11-23T09:39:50Z\" level=info msg=\"stopping ttrpc server\"" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.583462908-05:00" level=error msg="error while forwarding events from VM agent" error="rpc error: code = Canceled desc = context canceled" runtime=aws.firecracker vmID=vm1
+time="2022-11-23T04:39:50.583511199-05:00" level=debug msg="remove snapshot" key=remoteSnapshotterDemo-snap snapshotter=proxy
+time="2022-11-23T04:39:50.583626042-05:00" level=debug msg="remove snapshot" key="sha256:d2742e2df4a4530fada3b8dbea2b65c4b6fc03fc89f250e8077ecd0425e1ab6c" snapshotter=proxy
+time="2022-11-23T04:39:50.583689061-05:00" level=debug msg="remove content" key="sha256:07de61ed5cef583643702d85315c20e24d9ce8fc6961481806c90912e1e7bef3"
+time="2022-11-23T04:39:50.583729606-05:00" level=debug msg="remove content" key="sha256:3072dc67a6c382e000c3a60911488be108eccf7b7ffaee826489346980d36360"
+time="2022-11-23T04:39:50.583764231-05:00" level=debug msg="remove content" key="sha256:644de93aece85d86312aec7d832bb9caa767a10e1b4fa750a1e35f415ecfac2f"
+time="2022-11-23T04:39:50.584440161-05:00" level=debug msg="schedule snapshotter cleanup" snapshotter=proxy
+time="2022-11-23T04:39:50.584478347-05:00" level=debug msg="schedule content cleanup"
+time="2022-11-23T04:39:50.584781685-05:00" level=debug msg="removed content" digest="sha256:07de61ed5cef583643702d85315c20e24d9ce8fc6961481806c90912e1e7bef3"
+time="2022-11-23T04:39:50.584870975-05:00" level=debug msg="removed content" digest="sha256:3072dc67a6c382e000c3a60911488be108eccf7b7ffaee826489346980d36360"
+time="2022-11-23T04:39:50.584937147-05:00" level=debug msg="removed content" digest="sha256:644de93aece85d86312aec7d832bb9caa767a10e1b4fa750a1e35f415ecfac2f"
+time="2022-11-23T04:39:50.585039982-05:00" level=debug msg="content garbage collected" d="524.134µs"
+time="2022-11-23T04:39:50.757797205-05:00" level=warning msg="failed to remove snapshot" error="namespace is required: failed precondition" key=vm1/18/remoteSnapshotterDemo-snap snapshotter=proxy
+time="2022-11-23T04:39:50.758264405-05:00" level=warning msg="failed to remove snapshot" error="namespace is required: failed precondition" key="sha256:d2742e2df4a4530fada3b8dbea2b65c4b6fc03fc89f250e8077ecd0425e1ab6c" snapshotter=proxy
+time="2022-11-23T04:39:50.758851012-05:00" level=warning msg="snapshot garbage collection failed" error="namespace is required: failed precondition" snapshotter=proxy
+time="2022-11-23T04:39:50.758913422-05:00" level=debug msg="garbage collected" d=1.280821ms
+time="2022-11-23T04:39:50.816463359-05:00" level=debug msg="[   20.669983] agent[780]: time=\"2022-11-23T09:39:50Z\" level=info msg=\"shutting down agent\"" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.817354227-05:00" level=debug msg="copied 0" ExecID= TaskID=remoteSnapshotterDemo runtime=aws.firecracker stream=stderr vmID=vm1
+time="2022-11-23T04:39:50.817448848-05:00" level=debug msg="end copying io" ExecID= TaskID=remoteSnapshotterDemo runtime=aws.firecracker stream=stderr vmID=vm1
+time="2022-11-23T04:39:50.818844914-05:00" level=debug msg="copied 0" ExecID= TaskID=remoteSnapshotterDemo runtime=aws.firecracker stream=stdout vmID=vm1
+time="2022-11-23T04:39:50.818920509-05:00" level=debug msg="end copying io" ExecID= TaskID=remoteSnapshotterDemo runtime=aws.firecracker stream=stdout vmID=vm1
+time="2022-11-23T04:39:50.853901081-05:00" level=debug msg="[   20.707526] systemd[1]: firecracker-agent.service: Succeeded." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.879470117-05:00" level=debug msg="[   20.733100] systemd[1]: Removed slice system-modprobe.slice." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.880130859-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Removed slice \x1b[0;1;39msystem-modprobe.slice\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.880793244-05:00" level=debug msg="[   20.734471] systemd[1]: Stopped target Firecracker containerd VM." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.881429328-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Stopped target \x1b[0;1;39mFirecracker containerd VM\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.881986779-05:00" level=debug msg="[   20.735770] systemd[1]: Stopped target Timers." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.882551638-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Stopped target \x1b[0;1;39mTimers\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.883091491-05:00" level=debug msg="[   20.736861] systemd[1]: e2scrub_all.timer: Succeeded." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.883806066-05:00" level=debug msg="[   20.737419] systemd[1]: Stopped Periodic ext4 Online Metadata Check for All Filesystems." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.884551788-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Stopped \x1b[0;1;39mPeriodic ext4 Onli…ata Check for All Filesystems\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.885274461-05:00" level=debug msg="[   20.738955] systemd[1]: fstrim.timer: Succeeded." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.886491841-05:00" level=debug msg="[   20.740182] systemd[1]: Stopped Discard unused blocks once a week." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.887136814-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Stopped \x1b[0;1;39mDiscard unused blocks once a week\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.888608902-05:00" level=debug msg="[   20.742303] systemd[1]: systemd-tmpfiles-clean.timer: Succeeded." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.890369900-05:00" level=debug msg="[   20.743952] systemd[1]: Stopped Daily Cleanup of Temporary Directories." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.891078250-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Stopped \x1b[0;1;39mDaily Cleanup of Temporary Directories\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.892307659-05:00" level=debug msg="[   20.746070] systemd[1]: Stopping Metrics Socat..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.893413164-05:00" level=debug msg="         Stopping \x1b[0;1;39mMetrics Socat\x1b[0m..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.900863683-05:00" level=debug msg="[   20.754656] systemd[1]: Stopping Socat..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.904994419-05:00" level=debug msg="         Stopping \x1b[0;1;39mSocat\x1b[0m..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.921706821-05:00" level=debug msg="[   20.775395] systemd[1]: Stopping Load/Save Random Seed..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.923044470-05:00" level=debug msg="         Stopping \x1b[0;1;39mLoad/Save Random Seed\x1b[0m..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.956239857-05:00" level=debug msg="[   20.809673] systemd[1]: metrics-socat.service: Main process exited, code=exited, status=143/n/a" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.956990916-05:00" level=debug msg="[   20.810642] systemd[1]: metrics-socat.service: Failed with result 'exit-code'." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.957833485-05:00" level=debug msg="[   20.811602] systemd[1]: Stopped Metrics Socat." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.958377450-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Stopped \x1b[0;1;39mMetrics Socat\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.959227754-05:00" level=debug msg="[   20.812837] systemd[1]: socat.service: Main process exited, code=exited, status=143/n/a" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.959913492-05:00" level=debug msg="[   20.813605] systemd[1]: socat.service: Failed with result 'exit-code'." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.960742522-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Stopped \x1b[0;1;39mSocat\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.961228366-05:00" level=debug msg="[   20.815047] systemd[1]: Stopped Socat." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.963992133-05:00" level=debug msg="[   20.817735] systemd[1]: Stopping Stargz Snapshotter..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:50.965336689-05:00" level=debug msg="         Stopping \x1b[0;1;39mStargz Snapshotter\x1b[0m..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.014483487-05:00" level=debug msg="[   20.867818] containerd-stargz-grpc[783]: {\"level\":\"info\",\"msg\":\"Got terminated\",\"time\":\"2022-11-23T09:39:50.953497549Z\"}" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.015623936-05:00" level=debug msg="[   20.868943] containerd-stargz-grpc[783]: {\"level\":\"info\",\"msg\":\"Exiting\",\"time\":\"2022-11-23T09:39:50.967104903Z\"}" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.021132008-05:00" level=debug msg="[   20.874801] systemd[1]: stargz-snapshotter.service: Succeeded." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.024262616-05:00" level=debug msg="[   20.878005] systemd[1]: Stopped Stargz Snapshotter." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.024846696-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Stopped \x1b[0;1;39mStargz Snapshotter\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.025471001-05:00" level=debug msg="[   20.879212] systemd[1]: Stopped target Basic System." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.026078732-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Stopped target \x1b[0;1;39mBasic System\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.026945217-05:00" level=debug msg="[   20.880541] systemd[1]: Stopped target Paths." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.028837603-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Stopped target \x1b[0;1;39mPaths\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.029342766-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Stopped target \x1b[0;1;39mSlices\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.029856069-05:00" level=debug msg="[   20.883641] systemd[1]: Stopped target Slices." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.033309930-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Stopped target \x1b[0;1;39mSockets\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.033834383-05:00" level=debug msg="[   20.887616] systemd[1]: Stopped target Sockets." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.034478028-05:00" level=debug msg="[   20.888197] systemd[1]: Stopped target System Initialization." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.035099356-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Stopped target \x1b[0;1;39mSystem Initialization\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.035735923-05:00" level=debug msg="[   20.889421] systemd[1]: Stopped target Local Encrypted Volumes." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.036384001-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Stopped target \x1b[0;1;39mLocal Encrypted Volumes\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.037005765-05:00" level=debug msg="[   20.890696] systemd[1]: systemd-ask-password-console.path: Succeeded." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.042758635-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Stopped \x1b[0;1;39mDispatch Password …ts to Console Directory Watch\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.043415641-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Stopped \x1b[0;1;39mApply Kernel Variables\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.044107480-05:00" level=debug msg="[   20.897721] systemd[1]: Stopped Dispatch Password Requests to Console Directory Watch." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.044686377-05:00" level=debug msg="[   20.898421] systemd[1]: systemd-sysctl.service: Succeeded." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.045234559-05:00" level=debug msg="[   20.898984] systemd[1]: Stopped Apply Kernel Variables." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.046025598-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Stopped \x1b[0;1;39mLoad Kernel Modules\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.046598838-05:00" level=debug msg="[   20.900319] systemd[1]: systemd-modules-load.service: Succeeded." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.047149545-05:00" level=debug msg="[   20.900904] systemd[1]: Stopped Load Kernel Modules." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.048279984-05:00" level=debug msg="         Stopping \x1b[0;1;39mUpdate UTMP about System Boot/Shutdown\x1b[0m..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.048931391-05:00" level=debug msg="[   20.902587] systemd[1]: Stopping Update UTMP about System Boot/Shutdown..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.079608627-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Stopped \x1b[0;1;39mUpdate UTMP about System Boot/Shutdown\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.080234461-05:00" level=debug msg="[   20.933911] systemd[1]: systemd-update-utmp.service: Succeeded." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.080885233-05:00" level=debug msg="[   20.934547] systemd[1]: Stopped Update UTMP about System Boot/Shutdown." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.081699302-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Stopped \x1b[0;1;39mCreate Volatile Files and Directories\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.082321160-05:00" level=debug msg="[   20.936020] systemd[1]: systemd-tmpfiles-setup.service: Succeeded." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.082928590-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Stopped target \x1b[0;1;39mLocal File Systems\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.083562222-05:00" level=debug msg="[   20.937248] systemd[1]: Stopped Create Volatile Files and Directories." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.086325446-05:00" level=debug msg="[   20.940026] systemd[1]: Stopped target Local File Systems." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.087204001-05:00" level=debug msg="[   20.940978] systemd[1]: Unmounting /rom/dev..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.087621014-05:00" level=debug msg="         Unmounting \x1b[0;1;39m/rom/dev\x1b[0m..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.088694043-05:00" level=debug msg="[   20.942437] systemd[1]: Unmounting /rom/overlay..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.089502593-05:00" level=debug msg="         Unmounting \x1b[0;1;39m/rom/overlay\x1b[0m..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.091601827-05:00" level=debug msg="[   20.945302] systemd[1]: Unmounting /rom..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.092569529-05:00" level=debug msg="         Unmounting \x1b[0;1;39m/rom\x1b[0m..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.095549526-05:00" level=debug msg="[   20.949035] systemd[1]: Unmounting /var/lib/containerd-stargz-grpc/snapshotter/snapshots/1/fs..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.096157065-05:00" level=debug msg="         Unmounting \x1b[0;1;39m/var/lib/contai…/snapshotter/snapshots/1/fs\x1b[0m..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.100187454-05:00" level=debug msg="[   20.953862] systemd[1]: systemd-random-seed.service: Succeeded." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.101918135-05:00" level=debug msg="[   20.955528] systemd[1]: Stopped Load/Save Random Seed." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.103679382-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Stopped \x1b[0;1;39mLoad/Save Random Seed\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.118737769-05:00" level=debug msg="[   20.972432] systemd[1]: rom-overlay.mount: Succeeded." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.119772272-05:00" level=debug msg="[   20.973507] systemd[1]: Unmounted /rom/overlay." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.120323182-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Unmounted \x1b[0;1;39m/rom/overlay\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.121028921-05:00" level=debug msg="[   20.974783] umount[822]: umount: /rom: target is busy." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.123453891-05:00" level=debug msg="[   20.977200] systemd[1]: rom-dev.mount: Succeeded." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.124236367-05:00" level=debug msg="[   20.978037] systemd[1]: Unmounted /rom/dev." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.124788379-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Unmounted \x1b[0;1;39m/rom/dev\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.125602831-05:00" level=debug msg="[   20.979225] systemd[1]: rom.mount: Mount process exited, code=exited, status=32/n/a" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.126178292-05:00" level=debug msg="[   20.979949] systemd[1]: Failed unmounting /rom." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.126811997-05:00" level=debug msg="[\x1b[0;1;31mFAILED\x1b[0m] Failed unmounting \x1b[0;1;39m/rom\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.134679254-05:00" level=debug msg="[   20.987935] systemd[1]: var-lib-containerd\\x2dstargz\\x2dgrpc-snapshotter-snapshots-1-fs.mount: Succeeded." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.138239319-05:00" level=debug msg="[   20.991670] systemd[1]: Unmounted /var/lib/containerd-stargz-grpc/snapshotter/snapshots/1/fs." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.140228863-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Unmounted \x1b[0;1;39m/var/lib/contain…pc/snapshotter/snapshots/1/fs\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.141421566-05:00" level=debug msg="[   20.995100] systemd[1]: Unmounting /var/lib/containerd-stargz-grpc..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.141964865-05:00" level=debug msg="         Unmounting \x1b[0;1;39m/var/lib/containerd-stargz-grpc\x1b[0m..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.150539710-05:00" level=debug msg="[   21.004140] systemd[1]: var-lib-containerd\\x2dstargz\\x2dgrpc.mount: Succeeded." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.151398397-05:00" level=debug msg="[   21.005099] systemd[1]: Unmounted /var/lib/containerd-stargz-grpc." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.152037414-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Unmounted \x1b[0;1;39m/var/lib/containerd-stargz-grpc\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.152751975-05:00" level=debug msg="[   21.006445] systemd[1]: Stopped target Local File Systems (Pre)." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.153393608-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Stopped target \x1b[0;1;39mLocal File Systems (Pre)\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.153925177-05:00" level=debug msg="[   21.007691] systemd[1]: Stopped target Swap." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.154712745-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Stopped target \x1b[0;1;39mSwap\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.155316130-05:00" level=debug msg="[   21.009037] systemd[1]: Reached target Unmount All Filesystems." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.155928608-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Reached target \x1b[0;1;39mUnmount All Filesystems\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.156557918-05:00" level=debug msg="[   21.010237] systemd[1]: systemd-tmpfiles-setup-dev.service: Succeeded." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.157247287-05:00" level=debug msg="[   21.010939] systemd[1]: Stopped Create Static Device Nodes in /dev." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.157956643-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Stopped \x1b[0;1;39mCreate Static Device Nodes in /dev\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.158606812-05:00" level=debug msg="[   21.012332] systemd[1]: systemd-sysusers.service: Succeeded." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.159224916-05:00" level=debug msg="[   21.012992] systemd[1]: Stopped Create System Users." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.159808648-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Stopped \x1b[0;1;39mCreate System Users\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.160390745-05:00" level=debug msg="[   21.014112] systemd[1]: systemd-remount-fs.service: Succeeded." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.161096871-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Stopped \x1b[0;1;39mRemount Root and Kernel File Systems\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.161712070-05:00" level=debug msg="[   21.015395] systemd[1]: Stopped Remount Root and Kernel File Systems." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.162373176-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Reached target \x1b[0;1;39mShutdown\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.162872094-05:00" level=debug msg="[   21.016661] systemd[1]: Reached target Shutdown." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.163474697-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Reached target \x1b[0;1;39mFinal Step\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.164004220-05:00" level=debug msg="[   21.017775] systemd[1]: Reached target Final Step." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.164616738-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Finished \x1b[0;1;39mReboot\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.165165126-05:00" level=debug msg="[   21.018917] systemd[1]: systemd-reboot.service: Succeeded." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.165677505-05:00" level=debug msg="[   21.019484] systemd[1]: Finished Reboot." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.166318825-05:00" level=debug msg="[\x1b[0;32m  OK  \x1b[0m] Reached target \x1b[0;1;39mReboot\x1b[0m." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.166852371-05:00" level=debug msg="[   21.020623] systemd[1]: Reached target Reboot." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.168385492-05:00" level=debug msg="[   21.022199] systemd[1]: Shutting down." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.258447985-05:00" level=debug msg="[   21.111978] systemd-shutdown[1]: Syncing filesystems and block devices." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.259422237-05:00" level=debug msg="[   21.112976] systemd-shutdown[1]: Sending SIGTERM to remaining processes..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.260919829-05:00" level=debug msg="[   21.114432] systemd-journald[541]: Received SIGTERM from PID 1 (systemd-shutdow)." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.272549465-05:00" level=debug msg="[   21.126065] systemd-shutdown[1]: Sending SIGKILL to remaining processes..." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.273832796-05:00" level=debug msg="[   21.127442] systemd-shutdown[1]: Unmounting file systems." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.276360800-05:00" level=debug msg="[   21.129335] [828]: Remounting '/' read-only in with options 'lowerdir=/,upperdir=/overlay/root,workdir=/overlay/work'." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.277766109-05:00" level=debug msg="[   21.131573] [829]: Unmounting '/rom'." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.278905797-05:00" level=debug msg="[   21.132462] systemd-shutdown[1]: All filesystems unmounted." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.279514043-05:00" level=debug msg="[   21.133151] systemd-shutdown[1]: Deactivating swaps." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.280078969-05:00" level=debug msg="[   21.133771] systemd-shutdown[1]: All swaps deactivated." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.280645396-05:00" level=debug msg="[   21.134322] systemd-shutdown[1]: Detaching loop devices." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.281766773-05:00" level=debug msg="[   21.135463] systemd-shutdown[1]: All loop devices detached." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.282496868-05:00" level=debug msg="[   21.136254] systemd-shutdown[1]: Stopping MD devices." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.283075906-05:00" level=debug msg="[   21.136784] systemd-shutdown[1]: All MD devices stopped." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.283583395-05:00" level=debug msg="[   21.137321] systemd-shutdown[1]: Detaching DM devices." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.284095153-05:00" level=debug msg="[   21.137827] systemd-shutdown[1]: All DM devices detached." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.285050619-05:00" level=debug msg="[   21.138344] systemd-shutdown[1]: All filesystems, swaps, loop devices, MD devices and DM devices detached." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.286111296-05:00" level=debug msg="[   21.139668] systemd-shutdown[1]: Syncing filesystems and block devices." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.286768704-05:00" level=debug msg="[   21.140587] systemd-shutdown[1]: Rebooting." jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.287233715-05:00" level=debug msg="[   21.141021] Unregister pv shared memory for cpu 0" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.287757425-05:00" level=debug msg="[   21.141655] reboot: Restarting system" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.288145087-05:00" level=debug msg="[   21.142008] reboot: machine restart" jailer=noop runtime=aws.firecracker vmID=vm1 vmm_stream=stdout
+time="2022-11-23T04:39:51.336971933-05:00" level=info msg="firecracker exited: status=0" runtime=aws.firecracker
+time="2022-11-23T04:39:51.567601609-05:00" level=debug msg="closing the exitCh <nil>" runtime=aws.firecracker
+time="2022-11-23T04:39:51.568103220-05:00" level=debug msg="event published" ns=vm1 runtime=aws.firecracker topic=/firecracker-vm/stop type=VMStop
+time="2022-11-23T04:39:51.568197672-05:00" level=debug msg="stopVMM(): sending sigterm to firecracker" runtime=aws.firecracker
+time="2022-11-23T04:39:51.568456306-05:00" level=debug msg="event forwarded" ns=vm1 topic=/firecracker-vm/stop type=VMStop
+time="2022-11-23T04:39:55.523903886-05:00" level=error msg="error closing io stream" ExecID= TaskID=remoteSnapshotterDemo error="1 error occurred:\n\t* close unix @->firecracker.vsock: use of closed network connection\n\n" runtime=aws.firecracker stream=stdout vmID=vm1
+time="2022-11-23T04:39:55.523908230-05:00" level=error msg="error closing io stream" ExecID= TaskID=remoteSnapshotterDemo error="1 error occurred:\n\t* close unix @->firecracker.vsock: use of closed network connection\n\n" runtime=aws.firecracker stream=stderr vmID=vm1
+time="2022-11-23T04:39:56.571092019-05:00" level=debug msg="shim has been terminated" error="exit status 1" vmID=vm1
+time="2022-11-23T04:40:33.039231274-05:00" level=debug msg="get VM info: VMID:\"vm1\" "
+time="2022-11-23T04:41:55.882020931-05:00" level=error msg="aws.firecracker: publisher not closed" shim_stream=stderr vmID=vm1

@@ -1,0 +1,16 @@
+apiVersion: serving.knative.dev/v1
+kind: Pod
+metadata:
+  name: stargz-postgres-test
+spec:
+  template:
+    spec:
+      containers:
+        - name: postgres-stargz
+          image: ghcr.io/davidbuzatu-marian/postgres:estargz
+          ports:
+            - containerPort: 5432
+          imagePullPolicy: Always
+          env:
+            - name: POSTGRES_PASSWORD
+              value: "password"

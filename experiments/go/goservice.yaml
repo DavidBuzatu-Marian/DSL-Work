@@ -1,0 +1,14 @@
+apiVersion: serving.knative.dev/v1
+kind: Pod
+metadata:
+  name: stargz-golang-test
+spec:
+  template:
+    spec:
+      containers:
+        - name: golang-stargz
+          image: ghcr.io/davidbuzatu-marian/go-server:estargz
+          command: ["./main"]
+          ports:
+            - containerPort: 3000
+          imagePullPolicy: Always
