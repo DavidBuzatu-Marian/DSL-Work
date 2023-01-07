@@ -8,7 +8,6 @@ spec:
       containers:
         - name: python-stargz
           image: ghcr.io/davidbuzatu-marian/python-server:estargz
-          command: ["./main"]
           ports:
-            - containerPort: 5001
+            - containerPort: 5000
           imagePullPolicy: Always
