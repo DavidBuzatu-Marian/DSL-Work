@@ -1,0 +1,12 @@
+apiVersion: serving.knative.dev/v1
+kind: Pod
+metadata:
+  name: base-python-test
+spec:
+  template:
+    spec:
+      containers:
+        - name: python-base
+          image: ghcr.io/davidbuzatu-marian/python-server:base
+          ports:
+            - containerPort: 5000
