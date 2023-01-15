@@ -1,0 +1,16 @@
+apiVersion: serving.knative.dev/v1
+kind: Pod
+metadata:
+  name: stargz-ghost-test
+spec:
+  template:
+    spec:
+      containers:
+        - name: ghost-stargz
+          image: ghcr.io/davidbuzatu-marian/ghost:base
+          ports:
+            - containerPort: 2368
+          imagePullPolicy: Always
+          env:
+            - name: NODE_ENV
+              value: "development"

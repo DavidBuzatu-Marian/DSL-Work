@@ -1,5 +1,5 @@
 #!/bin/bash
-FROM python:3.10-alpine
+FROM --platform=amd64 python:3.10-alpine
 
 WORKDIR /app
 

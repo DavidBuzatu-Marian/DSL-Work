@@ -1,0 +1,15 @@
+apiVersion: serving.knative.dev/v1
+kind: Pod
+metadata:
+  name: base-ghost-test
+spec:
+  template:
+    spec:
+      containers:
+        - name: ghost-base
+          image: ghcr.io/davidbuzatu-marian/ghost:base
+          ports:
+            - containerPort: 2368
+          env:
+            - name: NODE_ENV
+              value: "development"

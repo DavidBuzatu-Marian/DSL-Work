@@ -1,0 +1,12 @@
+apiVersion: serving.knative.dev/v1
+kind: Pod
+metadata:
+  name: base-mongo-test
+spec:
+  template:
+    spec:
+      containers:
+        - name: mongo-base
+          image: ghcr.io/davidbuzatu-marian/mongo:base
+          ports:
+            - containerPort: 27017

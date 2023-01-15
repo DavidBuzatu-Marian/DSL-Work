@@ -1,0 +1,12 @@
+apiVersion: serving.knative.dev/v1
+kind: Pod
+metadata:
+  name: estargz-mongo-test
+spec:
+  template:
+    spec:
+      containers:
+        - name: mongo-estargz
+          image: ghcr.io/davidbuzatu-marian/mongo:estargz
+          ports:
+            - containerPort: 27017
