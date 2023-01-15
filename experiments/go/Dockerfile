@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FROM ghcr.io/stargz-containers/golang:1.18-org
+FROM golang:1.18
 RUN mkdir /app
 COPY . /app
 WORKDIR /app

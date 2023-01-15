@@ -1,0 +1,14 @@
+apiVersion: serving.knative.dev/v1
+kind: Pod
+metadata:
+  name: base-golang-test
+spec:
+  template:
+    spec:
+      containers:
+        - name: golang-base
+          image: ghcr.io/davidbuzatu-marian/go-server:latest
+          command: ["./main"]
+          ports:
+            - containerPort: 3000
+          imagePullPolicy: Always
