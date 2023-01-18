@@ -1,0 +1,13 @@
+apiVersion: serving.knative.dev/v1
+kind: Pod
+metadata:
+  name: estargz-nginx-test
+spec:
+  template:
+    spec:
+      containers:
+        - name: nginx-estargz
+          image: ghcr.io/davidbuzatu-marian/nginx:estargz
+          ports:
+            - containerPort: 80
+          imagePullPolicy: Always

@@ -1,0 +1,13 @@
+apiVersion: serving.knative.dev/v1
+kind: Pod
+metadata:
+  name: base-ubuntu-test
+spec:
+  template:
+    spec:
+      containers:
+        - name: ubuntu-base
+          image: ghcr.io/davidbuzatu-marian/ubuntu:base
+          command: ["/bin/bash"]
+          ports:
+            - containerPort: 11999

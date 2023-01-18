@@ -8,5 +8,6 @@ spec:
       containers:
         - name: mongo-estargz
           image: ghcr.io/davidbuzatu-marian/mongo:estargz
+          imagePullPolicy: Always
           ports:
             - containerPort: 27017

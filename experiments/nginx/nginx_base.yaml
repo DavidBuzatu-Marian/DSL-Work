@@ -1,0 +1,12 @@
+apiVersion: serving.knative.dev/v1
+kind: Pod
+metadata:
+  name: base-nginx-test
+spec:
+  template:
+    spec:
+      containers:
+        - name: nginx-base
+          image: ghcr.io/davidbuzatu-marian/nginx:base
+          ports:
+            - containerPort: 80

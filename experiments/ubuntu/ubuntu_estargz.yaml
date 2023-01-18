@@ -1,0 +1,14 @@
+apiVersion: serving.knative.dev/v1
+kind: Pod
+metadata:
+  name: estargz-ubuntu-test
+spec:
+  template:
+    spec:
+      containers:
+        - name: ubuntu-estargz
+          image: ghcr.io/davidbuzatu-marian/ubuntu:estargz
+          command: ["/bin/bash"]
+          ports:
+            - containerPort: 11999
+          imagePullPolicy: Always
