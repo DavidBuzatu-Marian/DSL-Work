@@ -8,5 +8,6 @@ spec:
       containers:
         - name: mongo-base
           image: ghcr.io/davidbuzatu-marian/mongo:base
+          imagePullPolicy: Always
           ports:
             - containerPort: 27017

@@ -1,0 +1,3 @@
+go build main.go
+
+./main base-ghost-test base-golang-test base-mongo-test base-nginx-test base-nodejs-test base-postgres-test base-python-test

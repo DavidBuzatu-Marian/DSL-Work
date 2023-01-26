@@ -10,6 +10,7 @@ spec:
           image: ghcr.io/davidbuzatu-marian/postgres:base
           ports:
             - containerPort: 5432
+          imagePullPolicy: Always
           env:
             - name: POSTGRES_PASSWORD
               value: "password"

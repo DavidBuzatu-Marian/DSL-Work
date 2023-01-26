@@ -27,7 +27,7 @@ func main() {
 		arg1 := "apply"
 		arg2 := name
 		arg3 := "-f"
-		arg4 := "./" + podName + "/" + podName + "_base.yaml"
+		arg4 := "./experiments/" + podName + "/" + podName + "_base.yaml"
 		arg5 := "--concurrency-target=1"
 
 		// Run Pod

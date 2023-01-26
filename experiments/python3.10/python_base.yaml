@@ -10,3 +10,4 @@ spec:
           image: ghcr.io/davidbuzatu-marian/python-server:base
           ports:
             - containerPort: 5000
+          imagePullPolicy: Always

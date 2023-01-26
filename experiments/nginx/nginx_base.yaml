@@ -8,5 +8,6 @@ spec:
       containers:
         - name: nginx-base
           image: ghcr.io/davidbuzatu-marian/nginx:base
+          imagePullPolicy: Always
           ports:
             - containerPort: 80
