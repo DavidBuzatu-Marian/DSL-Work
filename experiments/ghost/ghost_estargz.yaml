@@ -1,7 +1,7 @@
 apiVersion: serving.knative.dev/v1
 kind: Pod
 metadata:
-  name: stargz-ghost-test
+  name: estargz-ghost-test
 spec:
   template:
     spec:

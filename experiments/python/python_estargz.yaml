@@ -1,7 +1,7 @@
 apiVersion: serving.knative.dev/v1
 kind: Pod
 metadata:
-  name: stargz-python-test
+  name: estargz-python-test
 spec:
   template:
     spec:
