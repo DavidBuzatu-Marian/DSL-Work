@@ -4,15 +4,19 @@ import (
 	"bytes"
 	"fmt"
 	"log"
+	"math/rand"
 	"os"
 	"os/exec"
+	"strconv"
 	"strings"
 	"time"
 )
 
 func main() {
 	app := "sudo"
-	outputFile, err := os.OpenFile("experiment.log", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	max := 100
+	min := 0
+	outputFile, err := os.OpenFile("experiment"+strconv.Itoa((rand.Intn(max-min)+min))+".log", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -22,12 +26,13 @@ func main() {
 			continue
 		}
 		fmt.Println("Running experiment...")
-		podName := strings.Split(name, "-")[1]
+		nameSplit := strings.Split(name, "-")
+		podName := nameSplit[1]
 		arg0 := "service"
 		arg1 := "apply"
 		arg2 := name
 		arg3 := "-f"
-		arg4 := "./experiments/" + podName + "/" + podName + "_base.yaml"
+		arg4 := "./experiments/" + podName + "/" + podName + "_" + nameSplit[0] + ".yaml"
 		arg5 := "--concurrency-target=1"
 
 		// Run Pod
