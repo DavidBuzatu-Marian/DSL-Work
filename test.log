@@ -1,0 +1,7 @@
+Run with pod: ghost.         Start container in: 3137(ms)
+Run with pod: golang.        Start container in: 19528(ms)
+Run with pod: mongo.         Start container in: 15167(ms)
+Run with pod: nginx.         Start container in: 6522(ms)
+Run with pod: nodejs.        Start container in: 20618(ms)
+Run with pod: postgres.      Start container in: 10120(ms)
+Run with pod: python.        Start container in: 6612(ms)
