@@ -49,7 +49,7 @@ func main() {
 		}
 
 		// Write experiment to file
-		experimentOutput := fmt.Sprintf("Run with pod: %s.\t Start container in: %v(ms)\n", podName, elapsed)
+		experimentOutput := fmt.Sprintf("%s:%v\n", podName, elapsed)
 		if _, err := outputFile.WriteString(experimentOutput); err != nil {
 			log.Println(err)
 			log.Println(experimentOutput)

@@ -1,70 +1,105 @@
-Run with pod: ghost.	 Start container in: 3400(ms)
-Run with pod: golang.	 Start container in: 7475(ms)
-Run with pod: mongo.	 Start container in: 8133(ms)
-Run with pod: nginx.	 Start container in: 6457(ms)
-Run with pod: nodejs.	 Start container in: 6565(ms)
-Run with pod: postgres.	 Start container in: 31681(ms)
-Run with pod: python.	 Start container in: 5939(ms)
-Run with pod: ghost.	 Start container in: 3393(ms)
-Run with pod: golang.	 Start container in: 6483(ms)
-Run with pod: mongo.	 Start container in: 7988(ms)
-Run with pod: nginx.	 Start container in: 6399(ms)
-Run with pod: nodejs.	 Start container in: 8501(ms)
-Run with pod: postgres.	 Start container in: 41265(ms)
-Run with pod: python.	 Start container in: 6548(ms)
-Run with pod: ghost.	 Start container in: 4168(ms)
-Run with pod: golang.	 Start container in: 5472(ms)
-Run with pod: mongo.	 Start container in: 7885(ms)
-Run with pod: nginx.	 Start container in: 5599(ms)
-un with pod: nodejs.	 Start container in: 6545(ms)
-Run with pod: postgres.	 Start container in: 31319(ms)
-Run with pod: python.	 Start container in: 5648(ms)
-Run with pod: ghost.	 Start container in: 3517(ms)
-Run with pod: golang.	 Start container in: 6529(ms)
-Run with pod: mongo.	 Start container in: 7756(ms)
-Run with pod: nginx.	 Start container in: 5592(ms)
-Run with pod: nodejs.	 Start container in: 6536(ms)
-Run with pod: postgres.	 Start container in: 31777(ms)
-Run with pod: python.	 Start container in: 5528(ms)
-Run with pod: ghost.	 Start container in: 3658(ms)
-Run with pod: golang.	 Start container in: 3511(ms)
-Run with pod: mongo.	 Start container in: 5106(ms)
-Run with pod: nginx.	 Start container in: 5438(ms)
-Run with pod: nodejs.	 Start container in: 7448(ms)
-Run with pod: postgres.	 Start container in: 31225(ms)
-Run with pod: python.	 Start container in: 5419(ms)
-Run with pod: ghost.	 Start container in: 3125(ms)
-Run with pod: golang.	 Start container in: 7558(ms)
-Run with pod: mongo.	 Start container in: 10343(ms)
-Run with pod: nginx.	 Start container in: 5597(ms)
-Run with pod: nodejs.	 Start container in: 8501(ms)
-Run with pod: postgres.	 Start container in: 31217(ms)
-Run with pod: python.	 Start container in: 5554(ms)
-Run with pod: ghost.	 Start container in: 3452(ms)
-Run with pod: golang.	 Start container in: 6560(ms)
-Run with pod: mongo.	 Start container in: 7773(ms)
-Run with pod: nginx.	 Start container in: 6505(ms)
-Run with pod: nodejs.	 Start container in: 6474(ms)
-Run with pod: postgres.	 Start container in: 31206(ms)
-Run with pod: python.	 Start container in: 5585(ms)
-Run with pod: ghost.	 Start container in: 3040(ms)
-Run with pod: golang.	 Start container in: 5448(ms)
-Run with pod: mongo.	 Start container in: 7581(ms)
-Run with pod: nginx.	 Start container in: 6494(ms)
-Run with pod: nodejs.	 Start container in: 6535(ms)
-Run with pod: postgres.	 Start container in: 22254(ms)
-Run with pod: python.	 Start container in: 5497(ms)
-Run with pod: ghost.	 Start container in: 3123(ms)
-Run with pod: golang.	 Start container in: 6459(ms)
-Run with pod: mongo.	 Start container in: 7877(ms)
-Run with pod: nginx.	 Start container in: 6358(ms)
-Run with pod: nodejs.	 Start container in: 6442(ms)
-Run with pod: postgres.	 Start container in: 31151(ms)
-Run with pod: python.	 Start container in: 5471(ms)
-Run with pod: ghost.	 Start container in: 3034(ms)
-Run with pod: golang.	 Start container in: 6465(ms)
-Run with pod: mongo.	 Start container in: 7773(ms)
-Run with pod: nginx.	 Start container in: 5482(ms)
-Run with pod: nodejs.	 Start container in: 6554(ms)
-Run with pod: postgres.	 Start container in: 31162(ms)
-Run with pod: python.	 Start container in: 9518(ms)
+ghost:3400
+golang:7475
+mongo:8133
+nginx:6457
+nodejs:6565
+postgres:31681
+python:5939
+ghost:3393
+golang:6483
+mongo:7988
+nginx:6399
+nodejs:8501
+postgres:41265
+python:6548
+ghost:4168
+golang:5472
+mongo:7885
+nginx:5599
+nodejs:6545
+postgres:31319
+python:5648
+ghost:3517
+golang:6529
+mongo:7756
+nginx:5592
+nodejs:6536
+postgres:31777
+python:5528
+ghost:3658
+golang:3511
+mongo:5106
+nginx:5438
+nodejs:7448
+postgres:31225
+python:5419
+ghost:3125
+golang:7558
+mongo:10343
+nginx:5597
+nodejs:8501
+postgres:31217
+python:5554
+ghost:3452
+golang:6560
+mongo:7773
+nginx:6505
+nodejs:6474
+postgres:31206
+python:5585
+ghost:3040
+golang:5448
+mongo:7581
+nginx:6494
+nodejs:6535
+postgres:22254
+python:5497
+ghost:3123
+golang:6459
+mongo:7877
+nginx:6358
+nodejs:6442
+postgres:31151
+python:5471
+ghost:3034
+golang:6465
+mongo:7773
+nginx:5482
+nodejs:6554
+postgres:31162
+python:9518
+ghost:3001
+golang:7540
+mongo:6975
+nginx:4484
+nodejs:5478
+postgres:6210
+python:4789
+ghost:3051
+golang:7489
+mongo:12327
+nginx:5513
+nodejs:7447
+postgres:35829
+python:4558
+ghost:2921
+golang:5444
+mongo:11629
+nginx:5488
+nodejs:7521
+postgres:7691
+python:9797
+ghost:3011
+golang:5458
+mongo:6892
+nginx:5575
+nodejs:5412
+postgres:6676
+python:5513
+ghost:25882
+golang:19604
+mongo:14803
+nginx:5479
+nodejs:19584
+postgres:9890
+python:6480
