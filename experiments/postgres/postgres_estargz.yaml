@@ -7,7 +7,7 @@ spec:
     spec:
       containers:
         - name: postgres-stargz
-          image: ghcr.io/davidbuzatu-marian/postgres:estargz
+          image: ghcr.io/davidbuzatu-marian/postgres:estargz2
           ports:
             - containerPort: 5432
           imagePullPolicy: Always
